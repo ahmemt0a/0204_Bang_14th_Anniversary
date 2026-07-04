@@ -12,11 +12,9 @@
 
 <style>
     html { scroll-behavior: smooth; }
-    
     body {
         font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
-
     .hero-bg {
         background-image: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.92)), url('14th Yers Celeb Main Banner.jpg');
         background-size: cover;
@@ -26,8 +24,8 @@
 </head>
 <body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-pink-500 selection:text-white">
 
+    <!-- HOME PAGE -->
     <div id="home-page" class="min-h-screen flex flex-col justify-between">
-        
         <section class="hero-bg flex-1 flex flex-col justify-center items-center text-center text-white px-4 py-16 md:py-24">
             <div class="max-w-xl space-y-6 w-full">
                 <span class="bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">রেজিস্ট্রেশন চলছে</span>
@@ -44,7 +42,7 @@
                             <i class="fa-solid fa-calendar-days text-xl text-amber-400"></i>
                             <span class="text-xs uppercase font-bold text-slate-300 tracking-wider">Date / তারিখ</span>
                         </div>
-                        <strong class="text-lg text-white">২৮ আগষ্ট, ২০ ২৬</strong>
+                        <strong class="text-lg text-white">২৮ আগষ্ট, ২০২৬</strong>
                         <span class="text-xs text-slate-300 mt-0.5">(শুক্রবার)</span>
                     </div>
 
@@ -67,7 +65,7 @@
                     </div>
                 </div>
 
-                <button onclick="navigateTo('event-page')" class="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-lg px-10 py-4 rounded-full shadow-2xl transform hover:scale-105 transition duration-300">
+                <button onclick="navigateTo('event-page')" class="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-lg px-10 py-4 rounded-full shadow-2xl transform hover:scale-105 transition duration-300 relative z-50">
                     <i class="fa-solid fa-ticket-simple mr-2"></i> রেজিষ্ট্রেশন করুন
                 </button>
             </div>
@@ -87,7 +85,7 @@
         </section>
     </div>
 
-
+    <!-- EVENT DETAILS PAGE -->
     <div id="event-page" class="hidden min-h-screen pb-24 px-4 pt-6 max-w-4xl mx-auto space-y-6">
         <button onclick="navigateTo('home-page')" class="text-orange-500 hover:text-orange-600 active:scale-95 font-bold text-sm flex items-center gap-1 py-2 transition-transform">
             <i class="fa-solid fa-chevron-left"></i> Back to Home
@@ -138,6 +136,7 @@
             </div>
         </div>
 
+        <!-- FIXED BOTTOM BAR IS NOW INSIDE EVENT PAGE -->
         <div class="fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 p-4 flex items-center justify-between shadow-2xl z-40">
             <div class="max-w-4xl mx-auto w-full flex items-center justify-between">
                 <div class="hidden sm:flex flex-col">
@@ -151,7 +150,7 @@
         </div>
     </div>
 
-
+    <!-- ORGANIZER PAGE -->
     <div id="organizer-page" class="hidden min-h-screen pb-16 px-4 pt-6 max-w-6xl mx-auto space-y-6">
         <button onclick="navigateTo('event-page')" class="text-orange-500 hover:text-orange-600 active:scale-95 font-bold text-sm flex items-center gap-1 py-2 transition-transform">
             <i class="fa-solid fa-chevron-left"></i> Back to Details
@@ -171,7 +170,7 @@
         </div>
     </div>
 
-
+    <!-- PAYMENT MODAL -->
     <div id="payment-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-50 p-4">
         <div class="bg-white rounded-3xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all border border-slate-100">
             <div id="modal-accent-header" class="p-5 text-white text-center relative">
@@ -212,17 +211,9 @@
         </div>
     </div>
 
-
+    <!-- JAVASCRIPT GLOBAL DEFINITIONS -->
     <script>
-        function navigateTo(pageId) {
-            document.getElementById('home-page').classList.add('hidden');
-            document.getElementById('event-page').classList.add('hidden');
-            document.getElementById('organizer-page').classList.add('hidden');
-            
-            document.getElementById(pageId).classList.remove('hidden');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
+        // নিরাপদ ও ক্লিন ডেটা সেট
         const organizersData = [
             { name: "Ad. Salma Akter Baly", phone: "01677967780", bkash: false, nagad: true, bkashType: "", nagadType: "Personal", fbUrl: "https://www.facebook.com/salmaakter.baly" },
             { name: "Afsar Uddin RaFi", phone: "01912785532", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/afsaruddin.rafi.9" },
@@ -260,7 +251,7 @@
             { name: "Sadi Mohammad", phone: "01712297129", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sadi.mohammad.5" },
             { name: "Sayed Chowdhury", phone: "01711200171", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/sayed.chowdhury.77" },
             { name: "Shahidul Islam Siam", phone: "01603500071", bkash: true, nagad: false, bkashType: "Merchant", nagadType: "", fbUrl: "https://www.facebook.com/shahidulislam.siam" },
-            { name: "Shamima Nasrin Suity", phone: "01712536306", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/shamimanasrin.suity" },
+            { name: "Shamima Nasrin Suity", phone: "01712536306", bkash: true, font: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/shamimanasrin.suity" },
             { name: "Sharif Ahmed", phone: "01717462007", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sharif.ahmed.52" },
             { name: "Sheikh Sharmin Shanta", phone: "01711281484", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sheikhsharmin.shanta" },
             { name: "Sohel Rana", phone: "01717163884", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sohel.rana.92" },
@@ -270,8 +261,20 @@
             { name: "Zahid Hasan", phone: "01711105459", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/zahid.hasan.56" }
         ];
 
+        // নেভিগেশন কন্ট্রোল
+        function navigateTo(pageId) {
+            document.getElementById('home-page').classList.add('hidden');
+            document.getElementById('event-page').classList.add('hidden');
+            document.getElementById('organizer-page').classList.add('hidden');
+            
+            document.getElementById(pageId).classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // অর্গানাইজার কার্ড জেনারেটর
         function generateOrganizerCards() {
             const container = document.getElementById('organizer-cards-container');
+            if(!container) return;
             container.innerHTML = ""; 
 
             organizersData.forEach(org => {
@@ -305,6 +308,7 @@
             });
         }
 
+        // পেমেন্ট মোডাল ওপেন
         function openPaymentModal(name, phone, gateway, type) {
             document.getElementById('modal-org-name').innerText = name;
             document.getElementById('modal-phone-number').innerText = phone;
@@ -324,14 +328,15 @@
             document.getElementById('payment-modal').classList.remove('hidden');
         }
 
+        // মোডাল ক্লোজ
         function closeModal() {
             document.getElementById('payment-modal').classList.add('hidden');
         }
 
-        // পেজ লোড হওয়ার সাথে সাথে ডাইনামিক কার্ডগুলো ব্যাকগ্রাউন্ডে রেডি করে রাখার জন্য কল
-        window.onload = function() {
+        // পেজ রেডি হওয়ার পর ইনিশিয়ালাইজেশন
+        document.addEventListener("DOMContentLoaded", function() {
             generateOrganizerCards();
-        };
+        });
     </script>
 </body>
 </html>
