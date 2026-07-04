@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14th Years Celebration - SSC 2002 & HSC 2004</title>
+    <!-- Tailwind CSS for Modern Cross-Platform Responsive Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts: Specific native fonts for perfect Bengali and crisp UI text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Ensuring perfect native Bengali typography overrides across Android browsers */
+        body, input, button { 
+            font-family: 'Hind Siliguri', 'Inter', sans-serif; 
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.92)), url('14th Yers Celeb Main Banner.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-pink-500 selection:text-white">
+
+    <!-- ========================================== -->
+    <!-- PAGE 1: HOME PAGE                          -->
+    <!-- ========================================== -->
+    <div id="home-page" class="min-h-screen flex flex-col justify-between">
+        
+        <!-- Hero Section with Explicitly Labeled Side-by-Side Info Cards -->
+        <section class="hero-bg flex-1 flex flex-col justify-center items-center text-center text-white px-4 py-16 md:py-24">
+		<div class="max-w-xl space-y-6 w-full">
+              	    <span class="bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">রেজিস্ট্রেশন চলছে</span>
+            <h1 class="text-3xl md:text-5xl font-black mb-3 text-amber-400 drop-shadow-md">
+                SSC 2002 & HSC 2004 Bangladesh (০২০৪)
+            </h1>
+            <h2 class="text-xl md:text-2xl font-bold mb-12 text-slate-200 tracking-wide">
+                14th Anniversary Celebration 2026
+            </h2>
+
+            <!-- Side-by-Side Horizontal Info Boxes with Clear text descriptors -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl mb-12">
+                <!-- Card 1: Date -->
+                <div class="bg-slate-900/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col items-center justify-center shadow-lg transition-all hover:scale-[1.02] hover:border-amber-500/30">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fa-solid fa-calendar-days text-xl text-amber-400"></i>
+                        <span class="text-xs uppercase font-bold text-slate-300 tracking-wider">Date / তারিখ</span>
+                    </div>
+                    <strong class="text-lg text-white">২৮ আগষ্ট, ২০২৬</strong>
+                    <span class="text-xs text-slate-300 mt-0.5">(শুক্রবার)</span>
+                </div>
+
+                <!-- Card 2: Venue -->
+                <div class="bg-slate-900/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col items-center justify-center shadow-lg transition-all hover:scale-[1.02] hover:border-amber-500/30">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fa-solid fa-location-dot text-xl text-amber-400"></i>
+                        <span class="text-xs uppercase font-bold text-slate-300 tracking-wider">Venue / স্থান</span>
+                    </div>
+                    <strong class="text-lg text-white">TSC অডিটোরিয়াম</strong>
+                    <span class="text-xs text-slate-300 mt-0.5">শেরেবাংলা কৃষি বিশ্ববিদ্যালয়</span>
+                </div>
+
+                <!-- Card 3: Time -->
+                <div class="bg-slate-900/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col items-center justify-center shadow-lg transition-all hover:scale-[1.02] hover:border-amber-500/30">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fa-solid fa-clock text-xl text-amber-400"></i>
+                        <span class="text-xs uppercase font-bold text-slate-300 tracking-wider">Time / সময়</span>
+                    </div>
+                    <strong class="text-lg text-white">সকাল ০৯:০০</strong>
+                    <span class="text-xs text-slate-300 mt-0.5">থেকে রাত ০৮:০০</span>
+                </div>
+            </div>
+
+		<!-- Main Interactive Action Button -->
+            <button onclick="navigateTo('event-page')" class="w-full max-w-xs min-h-[52px] bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 active:scale-95 text-white font-bold text-base rounded-xl shadow-xl transition-all duration-200 py-3.5 px-6 flex items-center">
+                <i class="fa-solid fa-ticket-simple"></i> Registration / রেজিষ্ট্রেশন করুন
+            </button>
+        </section>
+
+	<!-- Lower Section: Rules and Regulations -->
+        <section class="max-w-2xl mx-auto px-4 py-12 space-y-5">
+            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-pink-500 pl-3">বিশেষ সতর্কতা (Rules & Regulations)</h2>
+            <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 text-slate-700 leading-relaxed space-y-4 text-base">
+                <p>আমাদের ১৪ তম প্রতিষ্ঠা বার্ষিকীর আয়োজনটি অনুষ্ঠিত হতে যাচ্ছে প্রাকৃতিক সৌন্দর্যে ঘেরা মনোরম পরিবেশের প্রাঙ্গণে। তাই এই সুন্দর ও পরিচ্ছন্ন পরিবেশ রক্ষা করা আমাদের সকলের নৈতিক দায়িত্ব।</p>
+                <p>যেহেতু এটি একটি স্বনামধন্য শিক্ষা প্রতিষ্ঠান, সেহেতু এর শৃঙ্খলা, নিরাপত্তা ও সৌন্দর্য বজায় রাখার বিষয়ে সবাইকে সর্বোচ্চ সচেতনতা ও দায়িত্বশীলতার পরিচয় দিতে হবে।</p>
+                <div class="bg-rose-50 border-l-4 border-rose-500 p-4 rounded-xl text-rose-950 font-medium text-sm">
+                    ⚠️ <strong>অনুরোধক্রমে জানানো যাচ্ছে যে:</strong> কোন অবস্থাতেই কোনো ধরনের মাদকদ্রব্য বহন, গ্রহণ কিংবা সেবন সম্পূর্ণরূপে নিষিদ্ধ। এছাড়াও ধূমপানের ক্ষেত্রে অবশ্যই নির্ধারিত স্থান ব্যবহার করার জন্য বিশেষভাবে অনুরোধ করা হচ্ছে।
+                </div>
+                <p>ভেন্যুর পরিচ্ছন্নতা বজায় রাখতে সবাইকে সচেতন থাকতে হবে। যেখানে-সেখানে ময়লা বা আবর্জনা না ফেলে নির্দিষ্ট ডাস্টবিন বা নির্ধারিত স্থানে ফেলার জন্য আন্তরিকভাবে অনুরোধ জানানো হচ্ছে।</p>
+                <p class="font-semibold text-pink-600 text-center pt-2">আসুন, আমরা সবাই মিলে একটি সুশৃঙ্খল ও আনন্দময় পরিবেশে আমাদের প্রাণের উৎসব উদযাপন করি।</p>
+             </div>
+        </section>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- PAGE 2: COMPLETE EVENT DETAILS PAGE        -->
+    <!-- ========================================== -->
+    <div id="event-page" class="hidden min-h-screen pb-24 px-4 pt-6 max-w-4xl mx-auto space-y-6">
+        <button onclick="navigateTo('home-page')" class="text-orange-500 hover:text-orange-600 active:scale-95 font-bold text-sm flex items-center gap-1 py-2 transition-transform">
+            <i class="fa-solid fa-chevron-left"></i> Back to Home
+        </button>
+
+        <div class="bg-slate-900 text-white p-6 md:p-8 rounded-3xl shadow-lg">
+            <span class="bg-orange-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Event Details & Amenities</span>
+            <h2 class="text-2xl md:text-3xl font-extrabold mt-2 text-white">১৪ তম প্রতিষ্ঠা বার্ষিকী তথ্য বিবরণী</h2>
+            <p class="text-slate-300 text-sm mt-2">স্মৃতিময় বন্ধুত্বের বন্ধনকে আরও শক্তিশালী করতে সকল বন্ধু ও বান্ধবীদের স্বপরিবারে ও স্ববান্ধবে আমন্ত্রণ।</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Perks Included Section -->
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
+                <h3 class="text-base font-bold text-slate-900 uppercase tracking-wide border-b pb-3 mb-4 flex items-center gap-2 text-orange-600">
+                    <i class="fa-solid fa-gift"></i> What's Included / আমরা যা যা পাচ্ছি
+                </h3>
+                <ul class="space-y-2.5 text-slate-700 text-sm md:text-base">
+                    <li class="flex items-start gap-2">🚗 নির্ধারিত পার্কিং সুবিধা।</li>
+                    <li class="flex items-start gap-2">❄️ শীতাতপ নিয়ন্ত্রিত অডিটোরিয়াম।</li>
+                    <li class="flex items-start gap-2">🍽️ শীতাতপ নিয়ন্ত্রিত ডাইনিং রুম।</li>
+                    <li class="flex items-start gap-2">🍱 দুপুরের খাবার ও স্ন্যাক্স।</li>
+                    <li class="flex items-start gap-2">🧼 বেসিন ও ওয়াশরুম সুবিধা।</li>
+                    <li class="flex items-start gap-2">📸 আকর্ষণীয় ফটো বুথ।</li>
+                    <li class="flex items-start gap-2">🎁 ১৪তম প্রতিষ্ঠাবার্ষিকীর স্যুভেনির।</li>
+                    <li class="flex items-start gap-2">🎤 বর্ণাঢ্য সাংস্কৃতিক অনুষ্ঠান।</li>
+                    <li class="flex items-start gap-2">💬 এসি হলে আনলিমিটেড আড্ডা।</li>
+                    <li class="flex items-start gap-2">🎟️ র‍্যাফেল ড্র তে আকর্ষণীয় পুরস্কার।</li>
+                </ul>
+            </div>
+
+            <!-- Fee Structuring Table -->
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-base font-bold text-slate-900 uppercase tracking-wide border-b pb-3 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-tags text-slate-500"></i> Registration Fees / ফি ও নীতিমালা
+                    </h3> 
+                    <div class="space-y-3 text-sm">
+			<p class="font-semibold text-amber-700 bg-amber-50 p-2.5 rounded-xl border border-amber-200 text-xs md:text-sm">🛑 আসন সংখ্যা - ১,২০০ জন</p>
+			<p class="font-semibold text-amber-700 bg-amber-50 p-2.5 rounded-xl border border-amber-200 text-xs md:text-sm">🛑 রেজিস্ট্রেশন এর শেষ সময় ১৫ জুলাই, ২০২৬ (বৃহঃপতিবার) রাত ১২টা পর্যন্ত (নির্ধারিত সময়ের আগে আসন পূর্ণ হলে রেজিষ্ট্রেশন বন্ধ করা হবে)</p>
+                        <div class="flex justify-between border-b pb-2 text-slate-600"><span>Adult Fee (মাথাপিছু)</span> <strong class="text-orange-600">১০২০/- টাকা</strong></div>
+                        <div class="flex justify-between border-b pb-2 text-slate-600"><span>Spouse / Guest (অতিথি)</span> <strong class="text-orange-600">১০২০/- টাকা</strong></div>
+                        <div class="flex justify-between border-b pb-2 text-slate-600"><span>Child (Age 5+ Years)</span> <strong>৬০০/- টাকা</strong></div>
+                        <div class="flex justify-between border-b pb-2 text-slate-600"><span>Driver (Only Parcel)</span> <strong>৫০০/- টাকা</strong></div>
+                    </div>
+                </div>
+                <p class="text-xs text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-100 mt-4 leading-relaxed">
+                    * ৫ বছরের কম বাচ্চার এন্ট্রি ফ্রি (খাবার ব্যতীত)। যাতায়াত নিজস্ব ব্যবস্থাপনায় সম্পন্ন করতে হবে এবং জমাকৃত এন্ট্রি ফি অফেরতযোগ্য।
+                </p>
+            </div>
+        </div>
+
+        <!-- Sticky Bottom Mobile Layout Action Panel Trigger -->
+        <div class="fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 p-4 flex items-center justify-between shadow-2xl z-40">
+            <div class="max-w-4xl mx-auto w-full flex items-center justify-between">
+                <div class="hidden sm:flex flex-col">
+                    <span class="text-xs text-slate-400 font-bold uppercase tracking-wider">দায়িত্বশীল যে কোন বন্ধুর কাছে রেজিষ্ট্রেশন করা যাবে</span>
+                    <span class="text-sm text-slate-600 font-medium">Select an authorized organizer to complete payment</span>
+                </div>
+                <button onclick="navigateTo('organizer-page'); generateOrganizerCards();" class="w-full sm:w-auto min-h-[46px] bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-sm px-8 py-2.5 rounded-xl transition shadow-lg flex items-center justify-center gap-2">
+                    Proceed to Registration <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- PAGE 3: ORGANIZER DIRECTORY INDIVIDUAL CARDS -->
+    <!-- ========================================== -->
+    <div id="organizer-page" class="hidden min-h-screen pb-16 px-4 pt-6 max-w-6xl mx-auto space-y-6">
+        <button onclick="navigateTo('event-page')" class="text-orange-500 hover:text-orange-600 active:scale-95 font-bold text-sm flex items-center gap-1 py-2 transition-transform">
+            <i class="fa-solid fa-chevron-left"></i> Back to Details
+        </button>
+
+        <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-center md:text-left">
+                <h2 class="text-xl font-bold text-slate-900">Payment Authorized Receiver Directory</h2>
+                <p class="text-slate-500 text-sm mt-1">Click an individual card to verify profile on Facebook or view gateway number details.</p>
+            </div>
+            <div class="text-xs text-slate-400 font-medium bg-slate-50 px-4 py-2 rounded-xl border">
+                Total Authorized: 44 Representatives
+            </div>
+        </div>
+
+        <!-- Individual Grid Card Layout Structure Wrapper -->
+        <div id="organizer-cards-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Dynamic profile card items loop output structural anchor points -->
+        </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- INTERACTIVE WINDOW MODAL VIEW              -->
+    <!-- ========================================== -->
+    <div id="payment-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-50 p-4">
+        <div class="bg-white rounded-3xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all border border-slate-100">
+            <div id="modal-accent-header" class="p-5 text-white text-center relative">
+                <button onclick="closeModal()" class="absolute top-4 right-4 text-white/80 hover:text-white active:scale-90 text-xl p-1 transition-transform">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <img id="modal-gateway-logo" src="" alt="Gateway Logo" class="h-10 mx-auto mb-1 filter drop-shadow">
+                <h3 class="text-xs font-bold uppercase tracking-wider">Account Information Lookup</h3>
+            </div>
+
+            <div class="p-6 space-y-4">
+                <div class="bg-slate-50 p-4 rounded-2xl space-y-2 border border-slate-200/60 text-sm">
+                    <p class="text-slate-500 flex justify-between"><span>Authorized Receiver:</span> <strong id="modal-org-name" class="text-slate-900"></strong></p>
+                    <p class="text-slate-500 flex justify-between"><span>Wallet Protocol:</span> <strong id="modal-acc-type" class="text-orange-600 font-bold"></strong></p>
+                    <div class="border-t my-2 border-slate-200"></div>
+                    <div class="flex justify-between items-center pt-1">
+                        <span class="text-slate-500">Wallet Number:</span>
+                        <span class="bg-white px-3 py-1 rounded-lg border border-slate-300 font-mono font-bold text-slate-900 text-base tracking-wide select-all">
+                            <span id="modal-phone-number"></span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center bg-orange-50 border border-orange-100 p-4 rounded-2xl text-sm">
+                    <span class="text-slate-700 font-medium">Registration Unit Fee:</span>
+                    <strong class="text-lg text-orange-600 font-black">১০২০/- টাকা</strong>
+                </div>
+
+                <div class="bg-sky-50 text-sky-950 text-xs p-3 rounded-xl border border-sky-100 leading-relaxed">
+                    <i class="fa-solid fa-lightbulb text-sky-600 mr-1"></i> 
+                    <strong>Instruction:</strong> পেমেন্ট সম্পন্ন করার সময় অবশ্যই রেফারেন্স বক্সে আপনার <strong>নাম, ফোন নম্বর ও টি-শার্ট সাইজ</strong> উল্লেখ করবেন।
+                </div>
+
+                <button onclick="closeModal()" class="w-full min-h-[44px] bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm py-3 rounded-xl transition text-center shadow">
+                    Done / Close Window
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- INTERACTIVE CONFIGURATION JAVASCRIPT BLOCK -->
+    <!-- ========================================== -->
+    <script>
+        function navigateTo(pageId) {
+            document.getElementById('home-page').classList.add('hidden');
+            document.getElementById('event-page').classList.add('hidden');
+            document.getElementById('organizer-page').classList.add('hidden');
+            
+            document.getElementById(pageId).classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        const organizersData = [
+            { name: "Ad. Salma Akter Baly", phone: "01677967780", bkash: false, nagad: true, bkashType: "", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Afsar Uddin RaFi", phone: "01912785532", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Alamgir Kabir Rubel", phone: "01711066144", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Arif Mahamud Rony", phone: "01671664668", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Atique Towhidul Islam", phone: "01916151621", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Babul Murad", phone: "01817227752", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Dhushor Sohag", phone: "01670152610", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "FM Mostafizur Rahman", phone: "01912450043", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Fahmida Supti", phone: "01873123777", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Faisal Bin Alam", phone: "01673027176", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Hanif Islam", phone: "01727663333", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Hasan Himel", phone: "01911252068", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Ibrahim Khalil", phone: "01712445945", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Juned Ahmed Chowdhury", phone: "01787117453", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Mahtab Ahmed", phone: "01322858585", bkash: true, nagad: false, bkashType: "Merchant", nagadType: "", fb: "https://facebook.com" },
+            { name: "Mamtaz Akter Lipi", phone: "01756884712", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Masud Shahin", phone: "01812210066", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Md Iqbal Hossain", phone: "01830344311", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Md Shorwar Uddin", phone: "01779144133", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Md. Abdur Rahman", phone: "01711240052", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Mehnaz Dola", phone: "01711960630", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Merchant Khokon", phone: "01818082502", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Methila Mazumder Mumu", phone: "01672464798", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Mizanur Rahman Sobuj", phone: "01715981061", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Mohammad Nurul Alam", phone: "01818068031", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Mohib Russel", phone: "01711516630", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Morsheda Moury", phone: "01767705051", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Rana Bhuiyan", phone: "01339340092", bkash: true, nagad: false, bkashType: "Personal", fontType: "", fb: "https://facebook.com" },
+            { name: "Rashedul Islam", phone: "01711171887", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Rashedul Islam Chowdhury", phone: "01717366367", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Riyad Mahmud", phone: "01717540291", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Rubel Rana", phone: "01712959885", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Sabina Yeasmin Luna", phone: "01717141505", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Sadi Mohammad", phone: "01712297129", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Sayed Chowdhury", phone: "01711200171", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" },
+            { name: "Shahidul Islam Siam", phone: "01603500071", bkash: true, nagad: false, bkashType: "Merchant", nagadType: "", fb: "https://facebook.com" },
+            { name: "Shamima Nasrin Suity", phone: "01712536306", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Sharif Ahmed", phone: "01717462007", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Sheikh Sharmin Shanta", phone: "01711281484", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Sohel Rana", phone: "01717163884", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Tania Sultana Sumi", phone: "01920251717", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Taniza Sultana", phone: "01740958151", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Taslima Akter Rosie", phone: "01712521927", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fb: "https://facebook.com" },
+            { name: "Zahid Hasan", phone: "01711105459", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fb: "https://facebook.com" }
+        ];
+
+        function generateOrganizerCards() {
+            const container = document.getElementById('organizer-cards-container');
+            container.innerHTML = ""; 
+
+            organizersData.forEach(org => {
+                const card = document.createElement('div');
+                card.className = "bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-4 hover:shadow-md hover:border-slate-300 transition-all";
+
+                const headerDiv = document.createElement('div');
+                headerDiv.innerHTML = `
+                    <a href="${org.fb}" target="_blank" class="inline-flex items-center gap-2 group text-sm font-bold text-slate-900 hover:text-blue-600 transition-colors">
+                        <i class="fa-brands fa-facebook text-slate-400 group-hover:text-blue-500 text-lg"></i>
+                        <span>${org.name}</span>
+                    </a>
+                    <div class="mt-2 text-slate-500 font-mono text-xs flex items-center gap-1.5">
+                        <i class="fa-solid fa-phone text-[10px] text-slate-400"></i> Phone: ${org.phone}
+                    </div>
+                `;
+
+                const actionDiv = document.createElement('div');
+                actionDiv.className = "pt-3 border-t border-slate-100 flex items-center justify-between gap-1";
+                
+                let paymentButtons = `<span class="text-[10px] font-bold uppercase tracking-wider text-slate-400">Pay Via:</span><div class="flex gap-2">`;
+                
+                if (org.bkash) {
+                    paymentButtons += `
+                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'bKash', '${org.bkashType}')" class="p-1.5 bg-slate-50 hover:bg-pink-50 border border-slate-200 rounded-xl transition active:scale-95 flex items-center justify-center">
+                            <img src="BKash1.png" alt="bKash" class="h-4 w-9 object-contain">
+                        </button>`;
+                }
+                if (org.nagad) {
+                    paymentButtons += `
+                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'Nagad', '${org.nagadType}')" class="p-1.5 bg-slate-50 hover:bg-orange-50 border border-slate-200 rounded-xl transition active:scale-95 flex items-center justify-center">
+                            <img src="Nagad.png" alt="Nagad" class="h-4 w-9 object-contain">
+                        </button>`;
+                }
+                paymentButtons += `</div>`;
+                actionDiv.innerHTML = paymentButtons;
+
+                card.appendChild(headerDiv);
+                card.appendChild(actionDiv);
+                container.appendChild(card);
+            });
+        }
+
+        function openPaymentModal(name, phone, gateway, type) {
+            document.getElementById('modal-org-name').innerText = name;
+            document.getElementById('modal-phone-number').innerText = phone;
+            document.getElementById('modal-acc-type').innerText = type;
+            
+            const header = document.getElementById('modal-accent-header');
+            const logo = document.getElementById('modal-gateway-logo');
+
+            if (gateway === 'bKash') {
+                header.className = "p-5 text-white text-center relative bg-gradient-to-r from-pink-600 to-rose-500";
+                logo.src = 'BKash1.png';
+            } else {
+                header.className = "p-5 text-white text-center relative bg-gradient-to-r from-orange-600 to-amber-500";
+                logo.src = 'Nagad.png';
+            }
+
+            document.getElementById('payment-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('payment-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
