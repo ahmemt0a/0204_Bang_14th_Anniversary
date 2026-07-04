@@ -6,7 +6,7 @@
     <title>14th Years Celebration - 0204 BANGLADESH</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-   
+    
     <!-- Noto Font Setup for Flawless Bengali Rendering -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +20,12 @@
     .serif-bangla {
         font-family: 'Noto Serif Bengali', Georgia, serif !important;
     }
-
+    /* Fixed mobile view for Hero Banner */
     .hero-bg {
-        background-image: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.92)), url('14th Yers Celeb Main Banner.jpg');
+        background-image: linear-gradient(rgba(15, 23, 42, 0.82), rgba(15, 23, 42, 0.94)), url('14th Yers Celeb Main Banner.jpg');
         background-size: cover;
-        background-position: center;
+        background-position: center top;
+        background-repeat: no-repeat;
     }
     /* Event Page Background with Regi Started.jpg */
     .event-bg {
@@ -47,38 +48,38 @@
         <section class="hero-bg flex-1 flex flex-col justify-center items-center text-center text-white px-4 py-16 md:py-24">
             <div class="max-w-xl space-y-6 w-full">
                 <span class="bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">রেজিস্ট্রেশন চলছে</span>
-                <h1 class="text-3xl md:text-5xl font-black mb-3 text-amber-400 drop-shadow-md">
-                    ১৪তম প্রতিষ্ঠা বার্ষিকী
+                <h1 class="text-3xl md:text-5xl font-black mb-3 text-amber-400 drop-shadow-md tracking-wide">
+                    ১৪তম প্রতিষ্ঠা বার্ষিকী ২০২৬ 
                 </h1>
                 <h2 class="text-xl md:text-2xl font-bold mb-12 text-slate-200 tracking-wide">
                     SSC 2002 & HSC 2004 Bangladesh (০২০৪)
                 </h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl mb-12">
-                    <div class="bg-slate-900/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col items-center justify-center shadow-lg transition-all hover:scale-[1.02] hover:border-amber-500/30">
+                    <div class="bg-slate-900/75 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col items-center justify-center shadow-lg transition-all hover:scale-[1.02] hover:border-amber-500/30">
                         <div class="flex items-center gap-2 mb-2">
                             <i class="fa-solid fa-calendar-days text-xl text-amber-400"></i>
                             <span class="text-xs uppercase font-bold text-slate-300 tracking-wider">Date / তারিখ</span>
                         </div>
-                        <strong class="text-lg text-white">২৮ আগষ্ট, ২০২৬</strong>
+                        <strong class="text-lg text-white font-bold">২৮ আগষ্ট, ২০২৬</strong>
                         <span class="text-xs text-slate-300 mt-0.5">(শুক্রবার)</span>
                     </div>
 
-                    <div class="bg-slate-900/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col items-center justify-center shadow-lg transition-all hover:scale-[1.02] hover:border-amber-500/30">
+                    <div class="bg-slate-900/75 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col items-center justify-center shadow-lg transition-all hover:scale-[1.02] hover:border-amber-500/30">
                         <div class="flex items-center gap-2 mb-2">
                             <i class="fa-solid fa-location-dot text-xl text-amber-400"></i>
                             <span class="text-xs uppercase font-bold text-slate-300 tracking-wider">Venue / স্থান</span>
                         </div>
-                        <strong class="text-lg text-white">TSC অডিটোরিয়াম</strong>
+                        <strong class="text-lg text-white font-bold">TSC অডিটোরিয়াম</strong>
                         <span class="text-xs text-slate-300 mt-0.5">শেরেবাংলা কৃষি বিশ্ববিদ্যালয়</span>
                     </div>
 
-                    <div class="bg-slate-900/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col items-center justify-center shadow-lg transition-all hover:scale-[1.02] hover:border-amber-500/30">
+                    <div class="bg-slate-900/75 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex flex-col items-center justify-center shadow-lg transition-all hover:scale-[1.02] hover:border-amber-500/30">
                         <div class="flex items-center gap-2 mb-2">
                             <i class="fa-solid fa-clock text-xl text-amber-400"></i>
                             <span class="text-xs uppercase font-bold text-slate-300 tracking-wider">Time / সময়</span>
                         </div>
-                        <strong class="text-lg text-white">সকাল ৯:০০</strong>
+                        <strong class="text-lg text-white font-bold">সকাল ৯:০০</strong>
                         <span class="text-xs text-slate-300 mt-0.5">থেকে রাত ৮:০০</span>
                     </div>
                 </div>
@@ -90,7 +91,6 @@
         </section>
 
         <section class="max-w-2xl mx-auto px-4 py-12 space-y-5">
-            <!-- হিন্দি শব্দ সংশোধন করে সম্পূর্ণ বাংলা করা হলো -->
             <h2 class="text-xl font-bold text-slate-900 border-l-4 border-pink-500 pl-3">বিশেষ সতর্কতা (Rules & Regulations)</h2>
             <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 text-slate-700 leading-relaxed space-y-4 text-base">
                 <p>আমাদের ১৪ তম প্রতিষ্ঠা বার্ষিকীর আয়োজনটি অনুষ্ঠিত হতে যাচ্ছে প্রাকৃতিক সৌন্দর্যে ঘেরা মনোরম পরিবেশের প্রাঙ্গণে। তাই এই সুন্দর ও পরিচ্ছন্ন পরিবেশ রক্ষা করা আমাদের সকলের নৈতিক দায়িত্ব।</p>
@@ -104,65 +104,67 @@
         </section>
     </div>
 
-    <!-- EVENT DETAILS PAGE -->
-    <div id="event-page" class="hidden min-h-screen pb-24 px-4 pt-6 max-w-4xl mx-auto space-y-6">
-        <button onclick="navigateTo('home-page')" class="text-orange-500 hover:text-orange-600 active:scale-95 font-bold text-sm flex items-center gap-1 py-2 transition-transform">
-            <i class="fa-solid fa-chevron-left"></i> Back to Home
-        </button>
+    <!-- EVENT DETAILS PAGE (Now utilizes Regi Started.jpg Background) -->
+    <div id="event-page" class="hidden min-h-screen pb-24 event-bg">
+        <div class="px-4 pt-6 max-w-4xl mx-auto space-y-6">
+            <button onclick="navigateTo('home-page')" class="text-orange-600 hover:text-orange-700 active:scale-95 font-bold text-sm flex items-center gap-1 py-2 transition-transform bg-white/80 backdrop-blur-sm px-4 rounded-full shadow-sm w-fit">
+                <i class="fa-solid fa-chevron-left"></i> Back to Home
+            </button>
 
-        <div class="bg-slate-900 text-white p-6 md:p-8 rounded-3xl shadow-lg">
-            <span class="bg-orange-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Event Details & Amenities</span>
-            <h2 class="text-2xl md:text-3xl font-extrabold mt-2 text-white">১৪ তম প্রতিষ্ঠা বার্ষিকী তথ্য বিবরণী</h2>
-            <p class="text-slate-300 text-sm mt-2">স্মৃতিময় বন্ধুত্বের বন্ধনকে আরও শক্তিশালী করতে সকল বন্ধু ও বান্ধবীদের স্বপরিবারে ও স্ববান্ধবে আমন্ত্রণ।</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200">
-                <h3 class="text-base font-bold text-slate-900 uppercase tracking-wide border-b pb-3 mb-4 flex items-center gap-2 text-orange-600">
-                    <i class="fa-solid fa-gift"></i> What's Included / আমরা যা যা পাচ্ছি
-                </h3>
-                <ul class="space-y-2.5 text-slate-700 text-sm md:text-base">
-                    <li class="flex items-start gap-2">🚗 নির্ধারিত পার্কিং সুবিধা।</li>
-                    <li class="flex items-start gap-2">❄️ শীতাতপ নিয়ন্ত্রিত অডিটোরিয়াম।</li>
-                    <li class="flex items-start gap-2">🍽️ শীতাতপ নিয়ন্ত্রিত ডাইনিং রুম।</li>
-                    <li class="flex items-start gap-2">🍱 দুপুরের খাবার ও স্ন্যাক্স।</li>
-                    <li class="flex items-start gap-2">🧼 নির্ধারিত বেসিন ও ওয়াশরুম সুবিধা।</li>
-                    <li class="flex items-start gap-2">📸 আকর্ষণীয় ফটো বুথ।</li>
-                    <li class="flex items-start gap-2">🎁 ১৪তম প্রতিষ্ঠাবার্ষিকীর স্যুভেনির।</li>
-                    <li class="flex items-start gap-2">🎤 বর্ণাঢ্য সাংস্কৃতিক অনুষ্ঠান।</li>
-                    <li class="flex items-start gap-2">💬 এসি হলে আনলিমিটেড আড্ডা।</li>
-                    <li class="flex items-start gap-2">🎟️ র‍্যাফেল ড্র তে আকর্ষণীয় পুরস্কার।</li>
-                </ul>
+            <div class="bg-slate-900/95 backdrop-blur-md text-white p-6 md:p-8 rounded-3xl shadow-xl border border-slate-800">
+                <span class="bg-orange-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Event Details & Amenities</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold mt-2 text-white serif-bangla">১৪ তম প্রতিষ্ঠা বার্ষিকী তথ্য বিবরণী</h2>
+                <p class="text-slate-300 text-sm mt-2">স্মৃতিময় বন্ধুত্বের বন্ধনকে আরও শক্তিশালী করতে সকল বন্ধু ও বান্ধবীদের স্বপরিবারে ও স্ববান্ধবে আমন্ত্রণ।</p>
             </div>
 
-            <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col justify-between">
-                <div>
-                    <h3 class="text-base font-bold text-slate-900 uppercase tracking-wide border-b pb-3 mb-4 flex items-center gap-2">
-                        <i class="fa-solid fa-tags text-slate-500"></i> Registration Fees / ফি ও নীতিমালা
-                    </h3> 
-                    <div class="space-y-3 text-sm">
-                        <p class="font-semibold text-amber-700 bg-amber-50 p-2.5 rounded-xl border border-amber-200 text-xs md:text-sm">🛑 আসন সংখ্যা - ১২০০ জন</p>
-                        <p class="font-semibold text-amber-700 bg-amber-50 p-2.5 rounded-xl border border-amber-200 text-xs md:text-sm">🛑 রেজিস্ট্রেশন এর শেষ সময় ১৫ জুলাই, ২০২৬ (বৃহঃপতিবার) রাত ১২টা পর্যন্ত (নির্ধারিত সময়ের আগে আসন পূর্ণ হলে রেজিষ্ট্রেশন বন্ধ করা হবে)</p>
-                        <div class="flex justify-between border-b pb-2 text-slate-600"><span>Adult Fee (মাথাপিছু)</span> <strong class="text-orange-600">১০২০/- টাকা</strong></div>
-                        <div class="flex justify-between border-b pb-2 text-slate-600"><span>Spouse / Guest (অতিথি)</span> <strong class="text-orange-600">১০২০/- টাকা</strong></div>
-                        <div class="flex justify-between border-b pb-2 text-slate-600"><span>Child (Age 5+ Years)</span> <strong>৬০০/- টাকা</strong></div>
-                        <div class="flex justify-between border-b pb-2 text-slate-600"><span>Driver (Only Parcel)</span> <strong>৫০০/- টাকা</strong></div>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white/95 backdrop-blur-sm p-6 rounded-3xl shadow-md border border-slate-200">
+                    <h3 class="text-base font-bold text-slate-900 uppercase tracking-wide border-b pb-3 mb-4 flex items-center gap-2 text-orange-600">
+                        <i class="fa-solid fa-gift"></i> What's Included / আমরা যা যা পাচ্ছি
+                    </h3>
+                    <ul class="space-y-2.5 text-slate-700 text-sm md:text-base font-medium">
+                        <li class="flex items-start gap-2">🚗 নির্ধারিত পার্কিং সুবিধা।</li>
+                        <li class="flex items-start gap-2">❄️ 🏢 শীতাতপ নিয়ন্ত্রিত অডিটোরিয়াম।</li>
+                        <li class="flex items-start gap-2">🍽️ শীতাতপ নিয়ন্ত্রিত ডাইনিং রুম।</li>
+                        <li class="flex items-start gap-2">🍱 দুপুরের খাবার ও স্ন্যাক্স।</li>
+                        <li class="flex items-start gap-2">🧼 বেসিন ও ওয়াশরুম সুবিধা।</li>
+                        <li class="flex items-start gap-2">📸 আকর্ষণীয় ফটো বুথ।</li>
+                        <li class="flex items-start gap-2">🎁 ১৪তম প্রতিষ্ঠাবার্ষিকীর স্যুভেনির।</li>
+                        <li class="flex items-start gap-2">🎤 বর্ণাঢ্য সাংস্কৃতিক অনুষ্ঠান।</li>
+                        <li class="flex items-start gap-2">💬 এসি হলে আনলিমিটেড আড্ডা।</li>
+                        <li class="flex items-start gap-2">🎟️ র‍্যাফেল ড্র তে আকর্ষণীয় পুরস্কার।</li>
+                    </ul>
                 </div>
-                <p class="text-xs text-slate-500 bg-slate-50 p-3 rounded-xl border border-slate-100 mt-4 leading-relaxed">
-                    * ৫ বছরের কম বাচ্চার এন্ট্রি ফ্রি (খাবার ব্যতীত)। যাতায়াত নিজস্ব ব্যবস্থাপনায় সম্পন্ন করতে হবে এবং জমাকৃত এন্ট্রি ফি অফেরতযোগ্য।
-                </p>
+
+                <div class="bg-white/95 backdrop-blur-sm p-6 rounded-3xl shadow-md border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-slate-900 uppercase tracking-wide border-b pb-3 mb-4 flex items-center gap-2">
+                            <i class="fa-solid fa-tags text-slate-500"></i> Registration Fees / ফি ও নীতিমালা
+                        </h3> 
+                        <div class="space-y-3 text-sm md:text-base">
+                            <p class="font-bold text-amber-900 bg-amber-500/10 p-3 rounded-xl border border-amber-500/20 text-xs md:text-sm">🛑 আসন সংখ্যা - ১,২০০ জন</p>
+                            <p class="font-bold text-rose-900 bg-rose-500/10 p-3 rounded-xl border border-rose-500/20 text-xs md:text-sm leading-relaxed">🛑 রেজিস্ট্রেশন এর শেষ সময় ১৫ জুলাই, ২০২৬ (বৃহঃপতিবার) রাত ১২টা পর্যন্ত (নির্ধারিত সময়ের আগে আসন পূর্ণ হলে রেজিষ্ট্রেশন বন্ধ করা হবে)</p>
+                            <div class="flex justify-between border-b pb-2 pt-1 text-slate-700"><span>Adult Fee (মাথাপিছু)</span> <strong class="text-orange-600 font-extrabold">১০২০/- টাকা</strong></div>
+                            <div class="flex justify-between border-b pb-2 text-slate-700"><span>Spouse / Guest (অতিথি)</span> <strong class="text-orange-600 font-extrabold">১০২০/- টাকা</strong></div>
+                            <div class="flex justify-between border-b pb-2 text-slate-700"><span>Child (Age 5+ Years)</span> <strong class="text-slate-900 font-extrabold">৬০০/- টাকা</strong></div>
+                            <div class="flex justify-between border-b pb-2 text-slate-700"><span>Driver (Only Parcel)</span> <strong class="text-slate-900 font-extrabold">৫০০/- টাকা</strong></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 bg-slate-100/80 p-3 rounded-xl border border-slate-200 mt-4 leading-relaxed">
+                        * ৫ বছরের কম বাচ্চার এন্ট্রি ফ্রি (খাবার ব্যতীত)। যাতায়াত নিজস্ব ব্যবস্থাপনায় সম্পন্ন করতে হবে এবং জমাকৃত এন্ট্রি ফি অফেরতযোগ্য।
+                    </p>
+                </div>
             </div>
         </div>
 
-        <!-- FIXED BOTTOM BAR INSIDE EVENT PAGE -->
-        <div class="fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 p-4 flex items-center justify-between shadow-2xl z-40">
+        <!-- FIXED BOTTOM BAR -->
+        <div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-slate-200 p-4 flex items-center justify-between shadow-2xl z-40">
             <div class="max-w-4xl mx-auto w-full flex items-center justify-between">
                 <div class="hidden sm:flex flex-col">
-                    <span class="text-xs text-slate-400 font-bold uppercase tracking-wider">দায়িত্বশীল যে কোন বন্ধুর কাছে এন্ট্রি ফি দিয়ে রেজিষ্ট্রেশন করা যাবে</span>
+                    <span class="text-xs text-slate-500 font-bold uppercase tracking-wider">দায়িত্বশীল যে কোন বন্ধুর কাছে এন্ট্রি ফি দিয়ে রেজিষ্ট্রেশন করা যাবে</span>
                     <span class="text-sm text-slate-600 font-medium">এন্ট্রি ফি প্রদান শেষে বন্ধুকে স্ক্রিনশট পাঠিয়ে আপনার সিরিয়াল নম্বর নিয়ে নিবেন</span>
                 </div>
-                <button onclick="navigateTo('organizer-page')" class="w-full sm:w-auto min-h-[46px] bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-sm px-8 py-2.5 rounded-xl transition shadow-lg flex items-center justify-center gap-2">
+                <button onclick="navigateTo('organizer-page')" class="w-full sm:w-auto min-h-[48px] bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-sm px-10 py-3 rounded-xl transition shadow-lg flex items-center justify-center gap-2 tracking-wider">
                     REGISTER NOW <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
@@ -177,10 +179,10 @@
 
         <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4">
             <div class="text-center md:text-left">
-                <h2 class="text-xl font-bold text-slate-900">নিম্নোক্ত দায়িত্বশীল যে কোন বন্ধুদের কাছে এন্ট্রি ফি দিয়ে রেজিষ্ট্রেশন করা যাবে</h2>
+                <h2 class="text-xl font-bold text-slate-900 serif-bangla">নিম্নোক্ত দায়িত্বশীল যে কোন বন্ধুদের কাছে এন্ট্রি ফি দিয়ে রেজিষ্ট্রেশন করা যাবে</h2>
                 <p class="text-slate-500 text-sm mt-1">দায়িত্বশীল কোন বন্ধুর বৃত্বান্ত জানতে চাইলে তার নামে ট‍্যাপ করুন</p>
             </div>
-            <div class="text-xs text-slate-400 font-medium bg-slate-50 px-4 py-2 rounded-xl border">
+            <div class="text-xs font-bold text-slate-500 bg-slate-50 px-4 py-2.5 rounded-xl border">
                 যে কোন এক জনের কাছে রেজিস্ট্রেশন করুন
             </div>
         </div>
@@ -190,24 +192,24 @@
     </div>
 
     <!-- PAYMENT MODAL -->
-    <div id="payment-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-50 p-4">
+    <div id="payment-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex justify-center items-center z-50 p-4">
         <div class="bg-white rounded-3xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all border border-slate-100">
-            <div id="modal-accent-header" class="p-5 text-white text-center relative">
+            <div id="modal-accent-header" class="p-6 text-white text-center relative">
                 <button onclick="closeModal()" class="absolute top-4 right-4 text-white/80 hover:text-white active:scale-90 text-xl p-1 transition-transform">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
-                <img id="modal-gateway-logo" src="" alt="Gateway Logo" class="h-10 mx-auto mb-1 filter drop-shadow">
-                <h3 class="text-xs font-bold uppercase tracking-wider">Account Information Lookup</h3>
+                <img id="modal-gateway-logo" src="" alt="Gateway Logo" class="h-12 mx-auto mb-2 filter drop-shadow-md">
+                <h3 class="text-xs font-bold uppercase tracking-wider opacity-90">Account Information Lookup</h3>
             </div>
 
             <div class="p-6 space-y-4">
                 <div class="bg-slate-50 p-4 rounded-2xl space-y-2 border border-slate-200/60 text-sm">
-                    <p class="text-slate-500 flex justify-between"><span>Authorized Receiver:</span> <strong id="modal-org-name" class="text-slate-900"></strong></p>
+                    <p class="text-slate-500 flex justify-between"><span>Authorized Receiver:</span> <strong id="modal-org-name" class="text-slate-900 font-bold"></strong></p>
                     <p class="text-slate-500 flex justify-between"><span>Wallet Protocol:</span> <strong id="modal-acc-type" class="text-orange-600 font-bold"></strong></p>
                     <div class="border-t my-2 border-slate-200"></div>
                     <div class="flex justify-between items-center pt-1">
                         <span class="text-slate-500">Wallet Number:</span>
-                        <span class="bg-white px-3 py-1 rounded-lg border border-slate-300 font-mono font-bold text-slate-900 text-base tracking-wide select-all">
+                        <span class="bg-white px-3 py-1.5 rounded-lg border border-slate-300 font-mono font-bold text-slate-900 text-base tracking-wide select-all shadow-sm">
                             <span id="modal-phone-number"></span>
                         </span>
                     </div>
@@ -215,15 +217,15 @@
 
                 <div class="flex justify-between items-center bg-orange-50 border border-orange-100 p-4 rounded-2xl text-sm">
                     <span class="text-slate-700 font-medium">Registration Fee:</span>
-                    <strong class="text-lg text-orange-600 font-black">১০২০/- টাকা</strong>
+                    <strong class="text-xl text-orange-600 font-black">১০২০/- টাকা</strong>
                 </div>
 
                 <div class="bg-sky-50 text-sky-950 text-xs p-3 rounded-xl border border-sky-100 leading-relaxed">
                     <i class="fa-solid fa-lightbulb text-sky-600 mr-1"></i> 
-                    <strong>Instruction:</strong> পেমেন্ট সম্পন্ন করার সময় অবশ্যই রেফারেন্স বক্সে আপনার <strong>নাম, ফোন নম্বর ও টি-শার্টের সাইজ</strong> উল্লেখ করবেন।
+                    <strong>Instruction:</strong> পেমেন্ট সম্পন্ন করার সময় অবশ্যই রেফারেন্স বক্সে আপনার <strong>নাম, ফোন নম্বর ও টি-শার্ট সাইজ</strong> উল্লেখ করবেন।
                 </div>
 
-                <button onclick="closeModal()" class="w-full min-h-[44px] bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm py-3 rounded-xl transition text-center shadow">
+                <button onclick="closeModal()" class="w-full min-h-[46px] bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm py-3 rounded-xl transition text-center shadow">
                     Done / Close Window
                 </button>
             </div>
@@ -261,7 +263,7 @@
             { name: "Mohib Russel", phone: "01711516630", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/mohib.russel" },
             { name: "Morsheda Moury", phone: "01767705051", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/morsheda.moury" },
             { name: "Rana Bhuiyan", phone: "01339340092", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/rana.bhuiyan.58" },
-            { name: "Rashedul Islam", phone: "01711171887", bkash: true, nagad: false, bkashType: "Personal", font: true, nagadType: "", fbUrl: "https://www.facebook.com/rashedul.islam.12" },
+            { name: "Rashedul Islam", phone: "01711171887", bkash: true, nagad: false, bkashType: "Personal", fbUrl: "https://www.facebook.com/rashedul.islam.12" },
             { name: "Rashedul Islam Chowdhury", phone: "01717366367", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/rashedulislam.chowdhury" },
             { name: "Riyad Mahmud", phone: "01717540291", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/riyad.mahmud.37" },
             { name: "Rubel Rana", phone: "01712959885", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/rubel.rana.73" },
@@ -297,17 +299,18 @@
                 const card = document.createElement('div');
                 card.className = "bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between gap-3 hover:shadow-md hover:border-slate-300 transition-all";
 
-                let dynamicIcons = `<div class="flex items-center gap-1.5 shrink-0">`;
+                // Enlarged payment gateway icons for better UX
+                let dynamicIcons = `<div class="flex items-center gap-2 shrink-0">`;
                 if (org.bkash) {
                     dynamicIcons += `
-                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'bKash', '${org.bkashType}')" title="Pay via bKash" class="p-1 bg-slate-50 hover:bg-pink-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center">
-                            <img src="BKash1.png" alt="bKash" class="h-3.5 w-8 object-contain">
+                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'bKash', '${org.bkashType}')" title="Pay via bKash" class="p-1.5 bg-slate-50 hover:bg-pink-50 border border-slate-200 rounded-xl transition active:scale-90 flex items-center justify-center shadow-xs">
+                            <img src="BKash1.png" alt="bKash" class="h-5 w-10 md:h-6 md:w-12 object-contain">
                         </button>`;
                 }
                 if (org.nagad) {
                     dynamicIcons += `
-                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'Nagad', '${org.nagadType}')" title="Pay via Nagad" class="p-1 bg-slate-50 hover:bg-orange-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center">
-                            <img src="Nagad.png" alt="Nagad" class="h-3.5 w-8 object-contain">
+                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'Nagad', '${org.nagadType}')" title="Pay via Nagad" class="p-1.5 bg-slate-50 hover:bg-orange-50 border border-slate-200 rounded-xl transition active:scale-90 flex items-center justify-center shadow-xs">
+                            <img src="Nagad.png" alt="Nagad" class="h-5 w-10 md:h-6 md:w-12 object-contain">
                         </button>`;
                 }
                 dynamicIcons += `</div>`;
@@ -333,10 +336,10 @@
             const logo = document.getElementById('modal-gateway-logo');
 
             if (gateway === 'bKash') {
-                header.className = "p-5 text-white text-center relative bg-gradient-to-r from-pink-600 to-rose-500";
+                header.className = "p-6 text-white text-center relative bg-gradient-to-r from-pink-600 to-rose-500";
                 logo.src = 'BKash1.png';
             } else {
-                header.className = "p-5 text-white text-center relative bg-gradient-to-r from-orange-600 to-amber-500";
+                header.className = "p-6 text-white text-center relative bg-gradient-to-r from-orange-600 to-amber-500";
                 logo.src = 'Nagad.png';
             }
 
