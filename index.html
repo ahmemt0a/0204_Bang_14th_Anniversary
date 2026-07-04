@@ -7,20 +7,25 @@
     <!-- Tailwind CSS for Modern Cross-Platform Responsive Styling -->
     <script src="https://cdn.tailwindcss.com"></script>
 <!-- Google Fonts: Specific native fonts for perfect Bengali and crisp UI text -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Ensuring perfect native Bengali typography overrides across Android browsers */
-        body, input, button { 
-            font-family: 'Hind Siliguri', 'Inter', sans-serif; 
-        }
-        .hero-bg {
-            background-image: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.92)), url('14th Yers Celeb Main Banner.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+<!-- Put this inside the <head> tag, right above your existing <style> block -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    html { scroll-behavior: smooth; }
+    
+    /* Forces Hind Siliguri to render for all Bengali character sets beautifully */
+    body {
+        font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    .hero-bg {
+        background-image: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.92)), url('14th Yers Celeb Main Banner.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+</style>
 </head>
 <body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-pink-500 selection:text-white">
 
