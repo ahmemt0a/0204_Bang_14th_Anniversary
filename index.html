@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +12,9 @@
 
 <style>
     html { scroll-behavior: smooth; }
-    body {
-        font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    /* বাংলা ফন্টকে ডিফল্ট এবং সর্বোচ্চ প্রায়োরিটি দেওয়া হলো */
+    body, .font-bangla {
+        font-family: 'Hind Siliguri', 'Segoe UI', Roboto, sans-serif !important;
     }
     .hero-bg {
         background-image: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.92)), url('14th Yers Celeb Main Banner.jpg');
@@ -22,7 +23,7 @@
     }
 </style>
 </head>
-<body class="bg-slate-50 font-sans text-slate-800 antialiased selection:bg-pink-500 selection:text-white">
+<body class="bg-slate-50 font-bangla text-slate-800 antialiased selection:bg-pink-500 selection:text-white">
 
     <!-- HOME PAGE -->
     <div id="home-page" class="min-h-screen flex flex-col justify-between">
@@ -42,7 +43,7 @@
                             <i class="fa-solid fa-calendar-days text-xl text-amber-400"></i>
                             <span class="text-xs uppercase font-bold text-slate-300 tracking-wider">Date / তারিখ</span>
                         </div>
-                        <strong class="text-lg text-white">২৮ আগষ্ট, ২০২৬</strong>
+                        <strong class="text-lg text-white">২৮ আগষ্ট, ২০漸৬</strong>
                         <span class="text-xs text-slate-300 mt-0.5">(শুক্রবার)</span>
                     </div>
 
@@ -72,12 +73,13 @@
         </section>
 
         <section class="max-w-2xl mx-auto px-4 py-12 space-y-5">
-            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-pink-500 pl-3">विशेष সতর্কতা (Rules & Regulations)</h2>
+            <!-- হিন্দি শব্দ সংশোধন করে সম্পূর্ণ বাংলা করা হলো -->
+            <h2 class="text-xl font-bold text-slate-900 border-l-4 border-pink-500 pl-3">বিশেষ সতর্কতা (Rules & Regulations)</h2>
             <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100 text-slate-700 leading-relaxed space-y-4 text-base">
                 <p>আমাদের ১৪ তম প্রতিষ্ঠা বার্ষিকীর আয়োজনটি অনুষ্ঠিত হতে যাচ্ছে প্রাকৃতিক সৌন্দর্যে ঘেরা মনোরম পরিবেশের প্রাঙ্গণে। তাই এই সুন্দর ও পরিচ্ছন্ন পরিবেশ রক্ষা করা আমাদের সকলের নৈতিক দায়িত্ব।</p>
                 <p>যেহেতু এটি একটি স্বনামধন্য শিক্ষা প্রতিষ্ঠান, সেহেতু এর শৃঙ্খলা, নিরাপত্তা ও সৌন্দর্য বজায় রাখার বিষয়ে সবাইকে সর্বোচ্চ সচেতনতা ও দায়িত্বশীলতার পরিচয় দিতে হবে।</p>
                 <div class="bg-rose-50 border-l-4 border-rose-500 p-4 rounded-xl text-rose-950 font-medium text-sm">
-                    ⚠️ <strong>অনুরোধক্রমে জানানো যাচ্ছে যে:</strong> কোন অবস্থাতেই কোনো ধরনের মাদকব্য বহন, গ্রহণ কিংবা সেবন সম্পূর্ণরূপে নিষিদ্ধ। এছাড়াও ধূমপানের ক্ষেত্রে অবশ্যই নির্ধারিত স্থান ব্যবহার করার জন্য বিশেষভাবে অনুরোধ করা হচ্ছে।
+                    ⚠️ <strong>অনুরোধক্রমে জানানো যাচ্ছে যে:</strong> কোন অবস্থাতেই কোনো ধরনের মাদকদ্রব্য বহন, গ্রহণ কিংবা সেবন সম্পূর্ণরূপে নিষিদ্ধ। এছাড়াও ধূমপানের ক্ষেত্রে অবশ্যই নির্ধারিত স্থান ব্যবহার করার জন্য বিশেষভাবে অনুরোধ করা হচ্ছে।
                 </div>
                 <p>ভেন্যুর পরিচ্ছন্নতা বজায় রাখতে সবাইকে সচেতন থাকতে হবে। যেখানে-সেখানে ময়লা বা আবর্জনা না ফেলে নির্দিষ্ট ডাস্টবিন বা নির্ধারিত স্থানে ফেলার জন্য আন্তরিকভাবে অনুরোধ জানানো হচ্ছে।</p>
                 <p class="font-semibold text-pink-600 text-center pt-2">আসুন, আমরা সবাই মিলে একটি সুশৃঙ্খল ও আনন্দময় পরিবেশে আমাদের প্রাণের উৎসব উদযাপন করি।</p>
@@ -107,7 +109,7 @@
                     <li class="flex items-start gap-2">❄️ শীতাতপ নিয়ন্ত্রিত অডিটোরিয়াম।</li>
                     <li class="flex items-start gap-2">🍽️ শীতাতপ নিয়ন্ত্রিত ডাইনিং রুম।</li>
                     <li class="flex items-start gap-2">🍱 দুপুরের খাবার ও স্ন্যাক্স।</li>
-                    <li class="flex items-start gap-2">🧼 বেসিন ও ওয়াশরুম সুবিধা।</li>
+                    <li class="flex items-start gap-2">🧼 নির্ধারিত বেসিন ও ওয়াশরুম সুবিধা।</li>
                     <li class="flex items-start gap-2">📸 আকর্ষণীয় ফটো বুথ।</li>
                     <li class="flex items-start gap-2">🎁 ১৪তম প্রতিষ্ঠাবার্ষিকীর স্যুভেনির।</li>
                     <li class="flex items-start gap-2">🎤 বর্ণাঢ্য সাংস্কৃতিক অনুষ্ঠান।</li>
@@ -136,7 +138,7 @@
             </div>
         </div>
 
-        <!-- FIXED BOTTOM BAR IS NOW INSIDE EVENT PAGE -->
+        <!-- FIXED BOTTOM BAR INSIDE EVENT PAGE -->
         <div class="fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 p-4 flex items-center justify-between shadow-2xl z-40">
             <div class="max-w-4xl mx-auto w-full flex items-center justify-between">
                 <div class="hidden sm:flex flex-col">
@@ -213,7 +215,6 @@
 
     <!-- JAVASCRIPT GLOBAL DEFINITIONS -->
     <script>
-        // নিরাপদ ও ক্লিন ডেটা সেট
         const organizersData = [
             { name: "Ad. Salma Akter Baly", phone: "01677967780", bkash: false, nagad: true, bkashType: "", nagadType: "Personal", fbUrl: "https://www.facebook.com/salmaakter.baly" },
             { name: "Afsar Uddin RaFi", phone: "01912785532", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/afsaruddin.rafi.9" },
@@ -243,7 +244,7 @@
             { name: "Mohib Russel", phone: "01711516630", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/mohib.russel" },
             { name: "Morsheda Moury", phone: "01767705051", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/morsheda.moury" },
             { name: "Rana Bhuiyan", phone: "01339340092", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/rana.bhuiyan.58" },
-            { name: "Rashedul Islam", phone: "01711171887", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/rashedul.islam.12" },
+            { name: "Rashedul Islam", phone: "01711171887", bkash: true, nagad: false, bkashType: "Personal", font: true, nagadType: "", fbUrl: "https://www.facebook.com/rashedul.islam.12" },
             { name: "Rashedul Islam Chowdhury", phone: "01717366367", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/rashedulislam.chowdhury" },
             { name: "Riyad Mahmud", phone: "01717540291", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/riyad.mahmud.37" },
             { name: "Rubel Rana", phone: "01712959885", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/rubel.rana.73" },
@@ -251,7 +252,7 @@
             { name: "Sadi Mohammad", phone: "01712297129", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sadi.mohammad.5" },
             { name: "Sayed Chowdhury", phone: "01711200171", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/sayed.chowdhury.77" },
             { name: "Shahidul Islam Siam", phone: "01603500071", bkash: true, nagad: false, bkashType: "Merchant", nagadType: "", fbUrl: "https://www.facebook.com/shahidulislam.siam" },
-            { name: "Shamima Nasrin Suity", phone: "01712536306", bkash: true, font: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/shamimanasrin.suity" },
+            { name: "Shamima Nasrin Suity", phone: "01712536306", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/shamimanasrin.suity" },
             { name: "Sharif Ahmed", phone: "01717462007", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sharif.ahmed.52" },
             { name: "Sheikh Sharmin Shanta", phone: "01711281484", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sheikhsharmin.shanta" },
             { name: "Sohel Rana", phone: "01717163884", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sohel.rana.92" },
@@ -261,7 +262,6 @@
             { name: "Zahid Hasan", phone: "01711105459", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/zahid.hasan.56" }
         ];
 
-        // নেভিগেশন কন্ট্রোল
         function navigateTo(pageId) {
             document.getElementById('home-page').classList.add('hidden');
             document.getElementById('event-page').classList.add('hidden');
@@ -271,7 +271,6 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // অর্গানাইজার কার্ড জেনারেটর
         function generateOrganizerCards() {
             const container = document.getElementById('organizer-cards-container');
             if(!container) return;
@@ -308,7 +307,6 @@
             });
         }
 
-        // পেমেন্ট মোডাল ওপেন
         function openPaymentModal(name, phone, gateway, type) {
             document.getElementById('modal-org-name').innerText = name;
             document.getElementById('modal-phone-number').innerText = phone;
@@ -328,12 +326,10 @@
             document.getElementById('payment-modal').classList.remove('hidden');
         }
 
-        // মোডাল ক্লোজ
         function closeModal() {
             document.getElementById('payment-modal').classList.add('hidden');
         }
 
-        // পেজ রেডি হওয়ার পর ইনিশিয়ালাইজেশন
         document.addEventListener("DOMContentLoaded", function() {
             generateOrganizerCards();
         });
