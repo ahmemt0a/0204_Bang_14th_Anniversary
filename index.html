@@ -232,54 +232,56 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT GLOBAL DEFINITIONS -->
-    <script>
-        const organizersData = [
-            { name: "Ad. Salma Akter Baly", phone: "01677967780", bkash: false, nagad: true, bkashType: "", nagadType: "Personal", fbUrl: "https://www.facebook.com/salmaakter.baly" },
-            { name: "Afsar Uddin RaFi", phone: "01912785532", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/afsaruddin.rafi.9" },
-            { name: "Alamgir Kabir Rubel", phone: "01711066144", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/alamgirkabir.rubel" },
-            { name: "Arif Mahamud Rony", phone: "01671664668", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/arifmahamud.rony" },
-            { name: "Atique Towhidul Islam", phone: "01916151621", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/atique.towhidul" },
-            { name: "Babul Murad", phone: "01817227752", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/babul.murad.7" },
-            { name: "Dhushor Sohag", phone: "01670152610", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/dhushor.sohag" },
-            { name: "FM Mostafizur Rahman", phone: "01912450043", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/fmmostafizur.rahman" },
-            { name: "Fahmida Supti", phone: "01873123777", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/fahmida.supti" },
-            { name: "Faisal Bin Alam", phone: "01673027176", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/faisal.binalam.9" },
-            { name: "Hanif Islam", phone: "01727663333", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/hanif.islam.54" },
-            { name: "Hasan Himel", phone: "01911252068", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/hasan.himel.39" },
-            { name: "Ibrahim Khalil", phone: "01712445945", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/ibrahim.khalil.16" },
-            { name: "Juned Ahmed Chowdhury", phone: "01787117453", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/juned.ahmed.chowdhury" },
-            { name: "Mahtab Ahmed", phone: "01322858585", bkash: true, nagad: false, bkashType: "Merchant", nagadType: "", fbUrl: "https://www.facebook.com/mahtab.ahmed.94" },
-            { name: "Mamtaz Akter Lipi", phone: "01756884712", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/mamtazakter.lipi" },
-            { name: "Masud Shahin", phone: "01812210066", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/masud.shahin.75" },
-            { name: "Md Iqbal Hossain", phone: "01830344311", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/mdiqbal.hossain.98" },
-            { name: "Md Shorwar Uddin", phone: "01779144133", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/mdshorwar.uddin" },
-            { name: "Md. Abdur Rahman", phone: "01711240052", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/md.abdurrahman.79" },
-            { name: "Mehnaz Dola", phone: "01711960630", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/mehnaz.dola" },
-            { name: "Merchant Khokon", phone: "01818082502", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/merchant.khokon" },
-            { name: "Methila Mazumder Mumu", phone: "01672464798", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/methilamazumder.mumu" },
-            { name: "Mizanur Rahman Sobuj", phone: "01715981061", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/mizanurrahman.sobuj" },
-            { name: "Mohammad Nurul Alam", phone: "01818068031", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/mohammadnurul.alam" },
-            { name: "Mohib Russel", phone: "01711516630", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/mohib.russel" },
-            { name: "Morsheda Moury", phone: "01767705051", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/morsheda.moury" },
-            { name: "Rana Bhuiyan", phone: "01339340092", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/rana.bhuiyan.58" },
-            { name: "Rashedul Islam", phone: "01711171887", bkash: true, nagad: false, bkashType: "Personal", fbUrl: "https://www.facebook.com/rashedul.islam.12" },
-            { name: "Rashedul Islam Chowdhury", phone: "01717366367", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/rashedulislam.chowdhury" },
-            { name: "Riyad Mahmud", phone: "01717540291", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/riyad.mahmud.37" },
-            { name: "Rubel Rana", phone: "01712959885", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/rubel.rana.73" },
-            { name: "Sabina Yeasmin Luna", phone: "01717141505", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sabinayeasmin.luna" },
-            { name: "Sadi Mohammad", phone: "01712297129", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sadi.mohammad.5" },
-            { name: "Sayed Chowdhury", phone: "01711200171", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/sayed.chowdhury.77" },
-            { name: "Shahidul Islam Siam", phone: "01603500071", bkash: true, nagad: false, bkashType: "Merchant", nagadType: "", fbUrl: "https://www.facebook.com/shahidulislam.siam" },
-            { name: "Shamima Nasrin Suity", phone: "01712536306", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/shamimanasrin.suity" },
-            { name: "Sharif Ahmed", phone: "01717462007", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sharif.ahmed.52" },
-            { name: "Sheikh Sharmin Shanta", phone: "01711281484", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sheikhsharmin.shanta" },
-            { name: "Sohel Rana", phone: "01717163884", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/sohel.rana.92" },
-            { name: "Tania Sultana Sumi", phone: "01920251717", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/taniasultana.sumi" },
-            { name: "Taniza Sultana", phone: "01740958151", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/taniza.sultana" },
-            { name: "Taslima Akter Rosie", phone: "01712521927", bkash: true, nagad: true, bkashType: "Personal", nagadType: "Personal", fbUrl: "https://www.facebook.com/taslimaakter.rosie" },
-            { name: "Zahid Hasan", phone: "01711105459", bkash: true, nagad: false, bkashType: "Personal", nagadType: "", fbUrl: "https://www.facebook.com/zahid.hasan.56" }
-        ];
+<!-- JAVASCRIPT UPDATED DYNAMIC DATA -->
+<script>
+// Updated List from "ORGS New.xlsx"
+const organizersData = [
+    { "name": "Ad. Salma Akter Baly", "phone": "01677967780", "bkash": false, "nagad": true, "rocket": false, "bkashType": "", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/salmaakter.baly" },
+    { "name": "Afsar Uddin RaFi", "phone": "01912785532", "bkash": true, "nagad": true, "rocket": true, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "Personal", "fbUrl": "https://www.facebook.com/afsaruddin.rafi.9" },
+    { "name": "Alamgir Kabir Rubel", "phone": "01711066144", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/alamgirkabir.rubel" },
+    { "name": "Arif Mahamud Rony", "phone": "01671664668", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/arifmahamud.rony" },
+    { "name": "Atique Towhidul Islam", "phone": "01916151621", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/atique.towhidul" },
+    { "name": "Babul Murad", "phone": "01817227752", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/babul.murad.7" },
+    { "name": "Dhushor Sohag", "phone": "01670152610", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/dhushor.sohag" },
+    { "name": "FM Mostafizur Rahman", "phone": "01912450043", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/fmmostafizur.rahman" },
+    { "name": "Fahmida Supti", "phone": "01873123777", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/fahmida.supti" },
+    { "name": "Faisal Bin Alam", "phone": "01673027176", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/faisal.binalam.9" },
+    { "name": "Hanif Islam", "phone": "01727663333", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/hanif.islam.54" },
+    { "name": "Hasan Himel", "phone": "01911252068", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/hasan.himel.39" },
+    { "name": "Ibrahim Khalil", "phone": "01712445945", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/ibrahim.khalil.16" },
+    { "name": "Juned Ahmed Chowdhury", "phone": "01787117453", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/juned.ahmed.chowdhury" },
+    { "name": "Mahtab Ahmed", "phone": "01322858585", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Merchant", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/mahtab.ahmed.94" },
+    { "name": "Mamtaz Akter Lipi", "phone": "01756884712", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/mamtazakter.lipi" },
+    { "name": "Masud Shahin", "phone": "01812210066", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/masud.shahin.75" },
+    { "name": "Md Iqbal Hossain", "phone": "01830344311", "bkash": true, "nagad": false, "rocket": true, "bkashType": "Personal", "nagadType": "", "rocketType": "Personal", "fbUrl": "https://www.facebook.com/mdiqbal.hossain.98" },
+    { "name": "Md Shorwar Uddin", "phone": "01779144133", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/mdshorwar.uddin" },
+    { "name": "Md. Abdur Rahman", "phone": "01711240052", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/md.abdurrahman.79" },
+    { "name": "Mehnaz Dola", "phone": "01711960630", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/mehnaz.dola" },
+    { "name": "Merchant Khokon", "phone": "01818082502", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/merchant.khokon" },
+    { "name": "Methila Mazumder Mumu", "phone": "01672464798", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/methilamazumder.mumu" },
+    { "name": "Mizanur Rahman Sobuj", "phone": "01715981061", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/mizanurrahman.sobuj" },
+    { "name": "Mohammad Nurul Alam", "phone": "01818068031", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/mohammadnurul.alam" },
+    { "name": "Mohib Russel", "phone": "01711516630", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/mohib.russel" },
+    { "name": "Morsheda Moury", "phone": "01767707556", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/morsheda.moury" },
+    { "name": "Nasim Kabir", "phone": "01617383836", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Nasrin Saleha Arif", "phone": "01720056060", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Rana Bhuiyan", "phone": "01339340092", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/rana.bhuiyan.58" },
+    { "name": "Rashidul Hasan Rumi", "phone": "01748281222", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "S. M Tariqul Islam Tintin", "phone": "01617646299", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Salim Hossain", "phone": "01815241161", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Samiul Azim", "phone": "01707138224", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Sarker Ikbal", "phone": "01911223934", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Shahidul Islam Siam", "phone": "01603500071", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Merchant", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/shahidulislam.siam" },
+    { "name": "Sharif Sumon", "phone": "01612819222", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Sheikh Ahashan Habib Eda", "phone": "01683534000", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Syed Tabriz", "phone": "01843522039", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Tarek Hasan Hemal", "phone": "01911721552", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Tariq Mahmud", "phone": "01742448188", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Tushar Mamun", "phone": "01816418928", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Zia-ur Rahman Titu", "phone": "01915872587", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Joynal Abedin Joy", "phone": "", "bkash": false, "nagad": false, "rocket": false, "bkashType": "", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" },
+    { "name": "Hasan Md Shamim", "phone": "01710424263", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/" }
+];
 
         function navigateTo(pageId) {
             document.getElementById('home-page').classList.add('hidden');
@@ -299,25 +301,36 @@
                 const card = document.createElement('div');
                 card.className = "bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between gap-3 hover:shadow-md hover:border-slate-300 transition-all";
 
-                // Enlarged payment gateway icons for better UX
-                let dynamicIcons = `<div class="flex items-center gap-2 shrink-0">`;
+                // Generate Dynamic Buttons for Available Payment Gateways
+                let dynamicIcons = `<div class="flex items-center gap-1.5 shrink-0">`;
+                
                 if (org.bkash) {
                     dynamicIcons += `
-                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'bKash', '${org.bkashType}')" title="Pay via bKash" class="p-1.5 bg-slate-50 hover:bg-pink-50 border border-slate-200 rounded-xl transition active:scale-90 flex items-center justify-center shadow-xs">
-                            <img src="BKash1.png" alt="bKash" class="h-5 w-10 md:h-6 md:w-12 object-contain">
+                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'bKash', '${org.bkashType}')" title="Pay via bKash" class="p-1 bg-slate-50 hover:bg-pink-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center shadow-xs">
+                            <img src="BKash1.png" alt="bKash" class="h-5 w-9 md:h-6 md:w-11 object-contain">
                         </button>`;
                 }
                 if (org.nagad) {
                     dynamicIcons += `
-                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'Nagad', '${org.nagadType}')" title="Pay via Nagad" class="p-1.5 bg-slate-50 hover:bg-orange-50 border border-slate-200 rounded-xl transition active:scale-90 flex items-center justify-center shadow-xs">
-                            <img src="Nagad.png" alt="Nagad" class="h-5 w-10 md:h-6 md:w-12 object-contain">
+                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'Nagad', '${org.nagadType}')" title="Pay via Nagad" class="p-1 bg-slate-50 hover:bg-orange-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center shadow-xs">
+                            <img src="Nagad.png" alt="Nagad" class="h-5 w-9 md:h-6 md:w-11 object-contain">
                         </button>`;
                 }
+                if (org.rocket) {
+                    dynamicIcons += `
+                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'Rocket', '${org.rocketType}')" title="Pay via Rocket" class="p-1 bg-slate-50 hover:bg-purple-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center shadow-xs">
+                            <img src="IMG_1078.png" alt="Rocket" class="h-5 w-9 md:h-6 md:w-11 object-contain">
+                        </button>`;
+                }
+                if (!org.bkash && !org.nagad && !org.rocket) {
+                    dynamicIcons += `<span class="text-[11px] text-slate-400 font-medium italic">Contact Direct</span>`;
+                }
+                
                 dynamicIcons += `</div>`;
 
                 card.innerHTML = `
                     <a href="${org.fbUrl}" target="_blank" class="group text-sm md:text-base font-extrabold text-slate-900 hover:text-blue-600 transition-colors leading-tight min-w-0 truncate">
-                        <span class="underline decoration-transparent group-hover:decoration-blue-600 transition-all break-words">${org.name}</span>
+                        <span class="underline decoration-transparent group-hover:decoration-blue-600 transition-all">${org.name}</span>
                         <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-slate-300 group-hover:text-blue-400 ml-0.5 inline-block align-middle"></i>
                     </a>
                     ${dynamicIcons}
@@ -329,8 +342,8 @@
 
         function openPaymentModal(name, phone, gateway, type) {
             document.getElementById('modal-org-name').innerText = name;
-            document.getElementById('modal-phone-number').innerText = phone;
-            document.getElementById('modal-acc-type').innerText = type;
+            document.getElementById('modal-phone-number').innerText = phone || "N/A";
+            document.getElementById('modal-acc-type').innerText = type || "Personal";
             
             const header = document.getElementById('modal-accent-header');
             const logo = document.getElementById('modal-gateway-logo');
@@ -338,9 +351,15 @@
             if (gateway === 'bKash') {
                 header.className = "p-6 text-white text-center relative bg-gradient-to-r from-pink-600 to-rose-500";
                 logo.src = 'BKash1.png';
-            } else {
+                logo.alt = 'bKash';
+            } else if (gateway === 'Nagad') {
                 header.className = "p-6 text-white text-center relative bg-gradient-to-r from-orange-600 to-amber-500";
                 logo.src = 'Nagad.png';
+                logo.alt = 'Nagad';
+            } else if (gateway === 'Rocket') {
+                header.className = "p-6 text-white text-center relative bg-gradient-to-r from-purple-700 to-indigo-600";
+                logo.src = 'IMG_1078.png';
+                logo.alt = 'Rocket';
             }
 
             document.getElementById('payment-modal').classList.remove('hidden');
