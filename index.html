@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Noto Font Setup for Flawless Bengali Rendering -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
@@ -43,11 +42,10 @@
 </head>
 <body class="bg-slate-50 font-bangla text-slate-800 antialiased selection:bg-pink-500 selection:text-white">
 
-    <!-- HOME PAGE -->
     <div id="home-page" class="min-h-screen flex flex-col justify-between">
-        <section class="hero-bg flex-1 flex flex-col justify-center items-center text-center text-white px-4 py-16 md:py-24">
+        <section class="hero-bg flex-1 flex flex-col justify-center items-center text-center text-blue px-4 py-20 md:py-24">
             <div class="max-w-xl space-y-6 w-full">
-                <span class="bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">রেজিস্ট্রেশন চলছে</span>
+                <span class="bg-emerald-500 text-white text-lg font-bold px-4 py-2.5 rounded-full uppercase tracking-wider shadow-md animate-pulse">রেজিস্ট্রেশন চলছে</span>
                 <h1 class="text-3xl md:text-5xl font-black mb-3 text-amber-400 drop-shadow-md tracking-wide">
                     ১৪তম প্রতিষ্ঠা বার্ষিকী ২০২৬ 
                 </h1>
@@ -104,7 +102,6 @@
         </section>
     </div>
 
-    <!-- EVENT DETAILS PAGE (Now utilizes Regi Started.jpg Background) -->
     <div id="event-page" class="hidden min-h-screen pb-24 event-bg">
         <div class="px-4 pt-6 max-w-4xl mx-auto space-y-6">
             <button onclick="navigateTo('home-page')" class="text-orange-600 hover:text-orange-700 active:scale-95 font-bold text-sm flex items-center gap-1 py-2 transition-transform bg-white/80 backdrop-blur-sm px-4 rounded-full shadow-sm w-fit">
@@ -120,16 +117,16 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-white/95 backdrop-blur-sm p-6 rounded-3xl shadow-md border border-slate-200">
                     <h3 class="text-base font-bold text-slate-900 uppercase tracking-wide border-b pb-3 mb-4 flex items-center gap-2 text-orange-600">
-                        <i class="fa-solid fa-gift"></i> What's Included / আমরা যা যা পাচ্ছি
+                        <i class="fa-solid fa-gift"></i> আমরা যা যা পাচ্ছি / What's Included
                     </h3>
                     <ul class="space-y-2.5 text-slate-700 text-sm md:text-base font-medium">
                         <li class="flex items-start gap-2">🚗 নির্ধারিত পার্কিং সুবিধা।</li>
                         <li class="flex items-start gap-2">❄️ 🏢 শীতাতপ নিয়ন্ত্রিত অডিটোরিয়াম।</li>
                         <li class="flex items-start gap-2">🍽️ শীতাতপ নিয়ন্ত্রিত ডাইনিং রুম।</li>
-                        <li class="flex items-start gap-2">🍱 দুপুরের খাবার ও স্ন্যাক্স।</li>
+                        <li class="flex items-start gap-2">🍱 দুপুরের খাবার ও বিকেলের স্ন্যাক্স।</li>
                         <li class="flex items-start gap-2">🧼 বেসিন ও ওয়াশরুম সুবিধা।</li>
-                        <li class="flex items-start gap-2">📸 আকর্ষণীয় ফটো বুথ।</li>
-                        <li class="flex items-start gap-2">🎁 ১৪তম প্রতিষ্ঠাবার্ষিকীর স্যুভেনির।</li>
+                        <li class="flex items-start gap-2">📸 নানা রকমের আকর্ষণীয় ফটো বুথ।</li>
+                        <li class="flex items-start gap-2">🎁 ১৪তম প্রতিষ্ঠাবার্ষিকীর स্যুভেনির।</li>
                         <li class="flex items-start gap-2">🎤 বর্ণাঢ্য সাংস্কৃতিক অনুষ্ঠান।</li>
                         <li class="flex items-start gap-2">💬 এসি হলে আনলিমিটেড আড্ডা।</li>
                         <li class="flex items-start gap-2">🎟️ র‍্যাফেল ড্র তে আকর্ষণীয় পুরস্কার।</li>
@@ -139,15 +136,15 @@
                 <div class="bg-white/95 backdrop-blur-sm p-6 rounded-3xl shadow-md border border-slate-200 flex flex-col justify-between">
                     <div>
                         <h3 class="text-base font-bold text-slate-900 uppercase tracking-wide border-b pb-3 mb-4 flex items-center gap-2">
-                            <i class="fa-solid fa-tags text-slate-500"></i> Registration Fees / ফি ও নীতিমালা
+                            <i class="fa-solid fa-tags text-slate-500"></i> フィ ও নীতিমালা / Registration Fees
                         </h3> 
                         <div class="space-y-3 text-sm md:text-base">
-                            <p class="font-bold text-amber-900 bg-amber-500/10 p-3 rounded-xl border border-amber-500/20 text-xs md:text-sm">🛑 আসন সংখ্যা - ১,২০০ জন</p>
+                            <p class="font-bold text-amber-900 bg-amber-500/10 p-3 rounded-xl border border-amber-500/20 text-xs md:text-sm">🛑 আসন সংখ্যা - ১,২০০ জন; </p>
                             <p class="font-bold text-rose-900 bg-rose-500/10 p-3 rounded-xl border border-rose-500/20 text-xs md:text-sm leading-relaxed">🛑 রেজিস্ট্রেশন এর শেষ সময় ১৫ জুলাই, ২০২৬ (বৃহঃপতিবার) রাত ১২টা পর্যন্ত (নির্ধারিত সময়ের আগে আসন পূর্ণ হলে রেজিষ্ট্রেশন বন্ধ করা হবে)</p>
-                            <div class="flex justify-between border-b pb-2 pt-1 text-slate-700"><span>Adult Fee (মাথাপিছু)</span> <strong class="text-orange-600 font-extrabold">১০২০/- টাকা</strong></div>
-                            <div class="flex justify-between border-b pb-2 text-slate-700"><span>Spouse / Guest (অতিথি)</span> <strong class="text-orange-600 font-extrabold">১০২০/- টাকা</strong></div>
-                            <div class="flex justify-between border-b pb-2 text-slate-700"><span>Child (Age 5+ Years)</span> <strong class="text-slate-900 font-extrabold">৬০০/- টাকা</strong></div>
-                            <div class="flex justify-between border-b pb-2 text-slate-700"><span>Driver (Only Parcel)</span> <strong class="text-slate-900 font-extrabold">৫০০/- টাকা</strong></div>
+                            <div class="flex justify-between border-b pb-2 pt-1 text-slate-700"><span>আমাদের সবার (Adult) মাথাপিছু</span> <strong class="text-orange-600 font-extrabold">১০২০/- টাকা</strong></div>
+                            <div class="flex justify-between border-b pb-2 text-slate-700"><span>জীবনসঙ্গী/অতিথি (Adult Guest)</span> <strong class="text-orange-600 font-extrabold">১০২০/- টাকা</strong></div>
+                            <div class="flex justify-between border-b pb-2 text-slate-700"><span>বাচ্চাদের (বয়স ৫ বছর উর্ধে)</span> <strong class="text-slate-900 font-extrabold">৬০০/- টাকা</strong></div>
+                            <div class="flex justify-between border-b pb-2 text-slate-700"><span>ড্রাইভার বা ব্যক্তিগত সহায়ক (Only Parcel)</span> <strong class="text-slate-900 font-extrabold">৫০০/- টাকা</strong></div>
                         </div>
                     </div>
                     <p class="text-xs text-slate-500 bg-slate-100/80 p-3 rounded-xl border border-slate-200 mt-4 leading-relaxed">
@@ -157,29 +154,28 @@
             </div>
         </div>
 
-        <!-- FIXED BOTTOM BAR -->
-		<div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 sm:p-4 shadow-2xl z-40">
+        <div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 sm:p-4 shadow-2xl z-40">
             <div class="max-w-4xl mx-auto w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                 
                 <div id="mobile-scroll-notice" class="h-0 opacity-0 overflow-hidden transition-all duration-500 ease-out sm:h-auto sm:opacity-100 sm:flex-1 sm:min-w-0 order-2 sm:order-1">
                     <div class="flex flex-col bg-slate-50 sm:bg-transparent p-2.5 sm:p-0 rounded-xl border border-slate-100 sm:border-0">
                         <span class="text-xs text-slate-500 font-bold uppercase tracking-wider text-center sm:text-left">দায়িত্বশীল যে কোন বন্ধুর কাছে এন্ট্রি ফি দিয়ে রেজিষ্ট্রেশন করা যাবে</span>
-                        <span class="text-sm text-slate-600 font-medium mt-0.5 text-center sm:text-left">পেমেন্ট করে বন্ধুকে স্ক্রিনশট পাঠিয়ে আপনার সিরিয়াল নম্বর নিয়ে নিবেন</span>
+                        <span class="text-sm text-slate-600 font-medium mt-0.5 text-center sm:text-left">পেমেন্ট শেষে বন্ধুকে স্ক্রিনশট পাঠিয়ে আপনার সিরিয়াল নম্বর নিয়ে নিবেন</span>
                     </div>
                 </div>
 
                 <div class="w-full sm:w-auto flex justify-center order-1 sm:order-2 shrink-0">
-                    <button onclick="navigateTo('organizer-page')" class="w-full sm:w-auto min-h-[44px] bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs sm:text-sm px-5 sm:px-10 py-2.5 sm:py-3 rounded-xl transition shadow-lg flex items-center justify-center gap-1.5 tracking-wider">
+                    <button type="button" onclick="navigateTo('organizer-page')" class="w-full sm:w-auto min-h-[44px] bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs sm:text-sm px-5 sm:px-10 py-2.5 sm:py-3 rounded-xl transition shadow-lg flex items-center justify-center gap-1.5 tracking-wider">
                         REGISTER NOW <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
                 
             </div>
         </div>
+    </div>
 
-    <!-- ORGANIZER PAGE -->
     <div id="organizer-page" class="hidden min-h-screen pb-16 px-4 pt-6 max-w-6xl mx-auto space-y-6">
-        <button onclick="navigateTo('event-page')" class="text-orange-500 hover:text-orange-600 active:scale-95 font-bold text-sm flex items-center gap-1 py-2 transition-transform">
+        <button onclick="navigateTo('event-page')" class="text-orange-500 hover:text-orange-600 active:scale-95 font-bold text-sm flex items-center gap-1 py-2 transition-transform bg-white border px-4 rounded-full shadow-sm w-fit">
             <i class="fa-solid fa-chevron-left"></i> Back to Details
         </button>
 
@@ -197,7 +193,6 @@
         </div>
     </div>
 
-    <!-- PAYMENT MODAL -->
     <div id="payment-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex justify-center items-center z-50 p-4">
         <div class="bg-white rounded-3xl shadow-2xl max-w-sm w-full overflow-hidden transform transition-all border border-slate-100">
             <div id="modal-accent-header" class="p-6 text-white text-center relative">
@@ -238,7 +233,6 @@
         </div>
     </div>
 
-<!-- JAVASCRIPT UPDATED DYNAMIC DATA -->
 <script>
 // Updated List from "ORGS New.xlsx"
 const organizersData = [
@@ -248,20 +242,20 @@ const organizersData = [
     { "name": "Alamgir Kabir Rubel", "phone": "01711066144", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/alamgirkabir.rubel" },
     { "name": "Arif Mahamud Rony", "phone": "01671664668", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/arifmahamud.rony" },
     { "name": "Atique Towhidul Islam", "phone": "01916151621", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/atique.towhidul.islam" },
-    { "name": "Babul Murad", "phone": "01817227752", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/ZahangirAlam.babul" },
+    { "name": "Babul Murad", "phone": "01817227752", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/babul.murad.7" },
     { "name": "Dhushor Sohag", "phone": "01670152610", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/dhushor.sohag" },
-    { "name": "FM Mostafizur Rahman", "phone": "01912450043", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/epha.ema.mostaphijura.rahamana" },
+    { "name": "FM Mostafizur Rahman", "phone": "01912450043", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/epha.ema.mostaphijura.rahman" },
     { "name": "Fahmida Supti", "phone": "01873123777", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/fahmida.supti" },
     { "name": "Faisal Bin Alam", "phone": "01673027176", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/faisal.txe" },
-    { "name": "Hanif Islam", "phone": "01727663333", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/hanif.islam.743161" },
-    { "name": "Hasan Himel", "phone": "01911252068", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/hasan.himel.23" },
-    { "name": "Ibrahim Khalil", "phone": "01712445945", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/ibrahim.khalil.5243817" },
+    { "name": "Hanif Islam", "phone": "01727663333", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/hanif.islam.54" },
+    { "name": "Hasan Himel", "phone": "01911252068", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/hasan.himel.39" },
+    { "name": "Ibrahim Khalil", "phone": "01712445945", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/ibrahim.khalil.16" },
     { "name": "Juned Ahmed Chowdhury", "phone": "01787117453", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/juned.ahmed.chowdhury" },
-    { "name": "Mahtab Ahmed", "phone": "01322858585", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Merchant", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/mahtab.ahmed.1675" },
+    { "name": "Mahtab Ahmed", "phone": "01322858585", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Merchant", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/mahtab.ahmed.94" },
     { "name": "Mamtaz Akter Lipi", "phone": "01756884712", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/lipi.labib.56" },
     { "name": "Masud Shahin", "phone": "01812210066", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/masud.shahin.75" },
-    { "name": "Md Iqbal Hossain", "phone": "01830344311", "bkash": true, "nagad": false, "rocket": true, "bkashType": "Personal", "nagadType": "", "rocketType": "Personal", "fbUrl": "https://www.facebook.com/md.iqbal.hossain.363207" },
-    { "name": "Md Shorwar Uddin", "phone": "01779144133", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/shorwar.hasan" },
+    { "name": "Md Iqbal Hossain", "phone": "01830344311", "bkash": true, "nagad": false, "rocket": true, "bkashType": "Personal", "nagadType": "", "rocketType": "Personal", "fbUrl": "https://www.facebook.com/mdiqbal.hossain.98" },
+    { "name": "Md Shorwar Uddin", "phone": "01779144133", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/mdshorwar.uddin" },
     { "name": "Md. Abdur Rahman", "phone": "01711240052", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/md.abdur.rahman.757225" },
     { "name": "Mehnaz Dola", "phone": "01711960630", "bkash": true, "nagad": true, "rocket": false, "bkashType": "Personal", "nagadType": "Personal", "rocketType": "", "fbUrl": "https://www.facebook.com/mehnaz.dola" },
     { "name": "Merchant Khokon", "phone": "01818082502", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/merchant.khokon" },
@@ -289,115 +283,115 @@ const organizersData = [
     { "name": "Hasan Md Shamim", "phone": "01710424263", "bkash": true, "nagad": false, "rocket": false, "bkashType": "Personal", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/hasan.m.shamim" }
 ];
 
-        function navigateTo(pageId) {
-            document.getElementById('home-page').classList.add('hidden');
-            document.getElementById('event-page').classList.add('hidden');
-            document.getElementById('organizer-page').classList.add('hidden');
-            
-            document.getElementById(pageId).classList.remove('hidden');
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+function navigateTo(pageId) {
+    document.getElementById('home-page').classList.add('hidden');
+    document.getElementById('event-page').classList.add('hidden');
+    document.getElementById('organizer-page').classList.add('hidden');
+    
+    document.getElementById(pageId).classList.remove('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-        function generateOrganizerCards() {
-            const container = document.getElementById('organizer-cards-container');
-            if(!container) return;
-            container.innerHTML = ""; 
+function generateOrganizerCards() {
+    const container = document.getElementById('organizer-cards-container');
+    if(!container) return;
+    container.innerHTML = ""; 
 
-            organizersData.forEach(org => {
-                const card = document.createElement('div');
-                card.className = "bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between gap-3 hover:shadow-md hover:border-slate-300 transition-all";
+    organizersData.forEach(org => {
+        const card = document.createElement('div');
+        card.className = "bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between gap-3 hover:shadow-md hover:border-slate-300 transition-all";
 
-                // Generate Dynamic Buttons for Available Payment Gateways
-                let dynamicIcons = `<div class="flex items-center gap-1.5 shrink-0">`;
-                
-                if (org.bkash) {
-                    dynamicIcons += `
-                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'bKash', '${org.bkashType}')" title="Pay via bKash" class="p-1 bg-slate-50 hover:bg-pink-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center shadow-xs">
-                            <img src="BKash1.png" alt="bKash" class="h-5 w-9 md:h-6 md:w-11 object-contain">
-                        </button>`;
-                }
-                if (org.nagad) {
-                    dynamicIcons += `
-                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'Nagad', '${org.nagadType}')" title="Pay via Nagad" class="p-1 bg-slate-50 hover:bg-orange-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center shadow-xs">
-                            <img src="Nagad.png" alt="Nagad" class="h-5 w-9 md:h-6 md:w-11 object-contain">
-                        </button>`;
-                }
-                if (org.rocket) {
-                    dynamicIcons += `
-                        <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'Rocket', '${org.rocketType}')" title="Pay via Rocket" class="p-1 bg-slate-50 hover:bg-purple-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center shadow-xs">
-                            <img src="IMG_1078.png" alt="Rocket" class="h-5 w-9 md:h-6 md:w-11 object-contain">
-                        </button>`;
-                }
-                if (!org.bkash && !org.nagad && !org.rocket) {
-                    dynamicIcons += `<span class="text-[11px] text-slate-400 font-medium italic">Contact Direct</span>`;
-                }
-                
-                dynamicIcons += `</div>`;
-
-                card.innerHTML = `
-                    <a href="${org.fbUrl}" target="_blank" class="group text-sm md:text-base font-extrabold text-slate-900 hover:text-blue-600 transition-colors leading-tight min-w-0 truncate">
-                        <span class="underline decoration-transparent group-hover:decoration-blue-600 transition-all">${org.name}</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-slate-300 group-hover:text-blue-400 ml-0.5 inline-block align-middle"></i>
-                    </a>
-                    ${dynamicIcons}
-                `;
-
-                container.appendChild(card);
-            });
-        }
-
-	// মোবাইলে স্ক্রল করার পর নোটিশ টেক্সট দেখানোর লজিক
-		window.addEventListener('scroll', function() {
-    // শুধুমাত্র মোবাইল স্ক্রিনের জন্য কাজ করবে (width < 640px)
-    if (window.innerWidth < 640) {
-        const noticeEl = document.getElementById('mobile-scroll-notice');
+        let dynamicIcons = `<div class="flex items-center gap-1.5 shrink-0">`;
         
-        // ইউজার যদি ওপর থেকে ৫০ পিক্সেলের বেশি স্ক্রল করে নিচে নামে
-        if (window.scrollY > 50) {
-            noticeEl.style.height = '60px'; // টেক্সটের উচ্চতা অনুযায়ী সেট করা
-            noticeEl.style.opacity = '1';
-            noticeEl.classList.add('mb-1');
-        } else {
-            // আবার স্ক্রল করে একদম ওপরে উঠে গেলে নোটিশটি নিচে লুকিয়ে যাবে
-            noticeEl.style.height = '0px';
-            noticeEl.style.opacity = '0';
-            noticeEl.classList.remove('mb-1');
+        if (org.bkash) {
+            dynamicIcons += `
+                <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'bKash', '${org.bkashType}')" title="Pay via bKash" class="p-1 bg-slate-50 hover:bg-pink-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center shadow-xs">
+                    <img src="BKash1.png" alt="bKash" class="h-5 w-9 md:h-6 md:w-11 object-contain">
+                </button>`;
         }
+        if (org.nagad) {
+            dynamicIcons += `
+                <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'Nagad', '${org.nagadType}')" title="Pay via Nagad" class="p-1 bg-slate-50 hover:bg-orange-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center shadow-xs">
+                    <img src="Nagad.png" alt="Nagad" class="h-5 w-9 md:h-6 md:w-11 object-contain">
+                </button>`;
+        }
+        if (org.rocket) {
+            dynamicIcons += `
+                <button onclick="openPaymentModal('${org.name}', '${org.phone}', 'Rocket', '${org.rocketType}')" title="Pay via Rocket" class="p-1 bg-slate-50 hover:bg-purple-50 border border-slate-200 rounded-lg transition active:scale-90 flex items-center justify-center shadow-xs">
+                    <img src="IMG_1078.png" alt="Rocket" class="h-5 w-9 md:h-6 md:w-11 object-contain">
+                </button>`;
+        }
+        if (!org.bkash && !org.nagad && !org.rocket) {
+            dynamicIcons += `<span class="text-[11px] text-slate-400 font-medium italic">Contact Direct</span>`;
+        }
+        
+        dynamicIcons += `</div>`;
 
-});
+        card.innerHTML = `
+            <a href="${org.fbUrl}" target="_blank" class="group text-sm md:text-base font-extrabold text-slate-900 hover:text-blue-600 transition-colors leading-tight min-w-0 truncate">
+                <span class="underline decoration-transparent group-hover:decoration-blue-600 transition-all">${org.name}</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-slate-300 group-hover:text-blue-400 ml-0.5 inline-block align-middle"></i>
+            </a>
+            ${dynamicIcons}
+        `;
 
-        function openPaymentModal(name, phone, gateway, type) {
-            document.getElementById('modal-org-name').innerText = name;
-            document.getElementById('modal-phone-number').innerText = phone || "N/A";
-            document.getElementById('modal-acc-type').innerText = type || "Personal";
-            
-            const header = document.getElementById('modal-accent-header');
-            const logo = document.getElementById('modal-gateway-logo');
+        container.appendChild(card);
+    });
+}
 
-            if (gateway === 'bKash') {
-                header.className = "p-6 text-white text-center relative bg-gradient-to-r from-pink-600 to-rose-500";
-                logo.src = 'BKash1.png';
-                logo.alt = 'bKash';
-            } else if (gateway === 'Nagad') {
-                header.className = "p-6 text-white text-center relative bg-gradient-to-r from-orange-600 to-amber-500";
-                logo.src = 'Nagad.png';
-                logo.alt = 'Nagad';
-            } else if (gateway === 'Rocket') {
-                header.className = "p-6 text-white text-center relative bg-gradient-to-r from-purple-700 to-indigo-600";
-                logo.src = 'IMG_1078.png';
-                logo.alt = 'Rocket';
+function openPaymentModal(name, phone, gateway, type) {
+    document.getElementById('modal-org-name').innerText = name;
+    document.getElementById('modal-phone-number').innerText = phone || "N/A";
+    document.getElementById('modal-acc-type').innerText = type || "Personal";
+    
+    const header = document.getElementById('modal-accent-header');
+    const logo = document.getElementById('modal-gateway-logo');
+
+    if (gateway === 'bKash') {
+        header.className = "p-6 text-white text-center relative bg-gradient-to-r from-pink-600 to-rose-500";
+        logo.src = 'BKash1.png';
+        logo.alt = 'bKash';
+    } else if (gateway === 'Nagad') {
+        header.className = "p-6 text-white text-center relative bg-gradient-to-r from-orange-600 to-amber-500";
+        logo.src = 'Nagad.png';
+        logo.alt = 'Nagad';
+    } else if (gateway === 'Rocket') {
+        header.className = "p-6 text-white text-center relative bg-gradient-to-r from-purple-700 to-indigo-600";
+        logo.src = 'IMG_1078.png';
+        logo.alt = 'Rocket';
+    }
+
+    document.getElementById('payment-modal').classList.remove('hidden');
+}
+
+function closeModal() {
+    document.getElementById('payment-modal').classList.add('hidden');
+}
+
+// DOMContentLoaded ইভেন্ট ট্রিম এবং স্ক্রল ট্র্যাকিং এক সাথে যুক্ত
+document.addEventListener("DOMContentLoaded", function() {
+    generateOrganizerCards();
+
+    // মোবাইলে স্ক্রল করার পর নোটিশ টেক্সট স্মুথলি দেখানোর লজিক
+    window.addEventListener('scroll', function() {
+        if (window.innerWidth < 640) {
+            const noticeEl = document.getElementById('mobile-scroll-notice');
+            if (noticeEl) {
+                // ইউজার ওপর থেকে ৫০ পিক্সেলের বেশি স্ক্রল করলে নোটিশটি ভেসে উঠবে
+                if (window.scrollY > 50) {
+                    noticeEl.style.height = '62px'; 
+                    noticeEl.style.opacity = '1';
+                    noticeEl.classList.add('mb-1');
+                } else {
+                    // আবার স্ক্রল করে ওপরে উঠলে নোটিশটি বাটনের নিচে লুকিয়ে যাবে
+                    noticeEl.style.height = '0px';
+                    noticeEl.style.opacity = '0';
+                    noticeEl.classList.remove('mb-1');
+                }
             }
-
-            document.getElementById('payment-modal').classList.remove('hidden');
         }
-
-        function closeModal() {
-            document.getElementById('payment-modal').classList.add('hidden');
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            generateOrganizerCards();
-        });
-    </script>
+    });
+});
+</script>
 </body>
 </html>
