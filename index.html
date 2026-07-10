@@ -346,6 +346,26 @@ const organizersData = [
             });
         }
 
+	// মোবাইলে স্ক্রল করার পর নোটিশ টেক্সট দেখানোর লজিক
+		window.addEventListener('scroll', function() {
+    // শুধুমাত্র মোবাইল স্ক্রিনের জন্য কাজ করবে (width < 640px)
+    if (window.innerWidth < 640) {
+        const noticeEl = document.getElementById('mobile-scroll-notice');
+        
+        // ইউজার যদি ওপর থেকে ৫০ পিক্সেলের বেশি স্ক্রল করে নিচে নামে
+        if (window.scrollY > 50) {
+            noticeEl.style.height = '60px'; // টেক্সটের উচ্চতা অনুযায়ী সেট করা
+            noticeEl.style.opacity = '1';
+            noticeEl.classList.add('mb-1');
+        } else {
+            // আবার স্ক্রল করে একদম ওপরে উঠে গেলে নোটিশটি নিচে লুকিয়ে যাবে
+            noticeEl.style.height = '0px';
+            noticeEl.style.opacity = '0';
+            noticeEl.classList.remove('mb-1');
+        }
+
+});
+
         function openPaymentModal(name, phone, gateway, type) {
             document.getElementById('modal-org-name').innerText = name;
             document.getElementById('modal-phone-number').innerText = phone || "N/A";
@@ -378,25 +398,6 @@ const organizersData = [
         document.addEventListener("DOMContentLoaded", function() {
             generateOrganizerCards();
         });
-		// মোবাইলে স্ক্রল করার পর নোটিশ টেক্সট দেখানোর লজিক
-window.addEventListener('scroll', function() {
-    // শুধুমাত্র মোবাইল স্ক্রিনের জন্য কাজ করবে (width < 640px)
-    if (window.innerWidth < 640) {
-        const noticeEl = document.getElementById('mobile-scroll-notice');
-        
-        // ইউজার যদি ওপর থেকে ৫০ পিক্সেলের বেশি স্ক্রল করে নিচে নামে
-        if (window.scrollY > 50) {
-            noticeEl.style.height = '60px'; // টেক্সটের উচ্চতা অনুযায়ী সেট করা
-            noticeEl.style.opacity = '1';
-            noticeEl.classList.add('mb-1');
-        } else {
-            // আবার স্ক্রল করে একদম ওপরে উঠে গেলে নোটিশটি নিচে লুকিয়ে যাবে
-            noticeEl.style.height = '0px';
-            noticeEl.style.opacity = '0';
-            noticeEl.classList.remove('mb-1');
-        }
-
-});
     </script>
 </body>
 </html>
