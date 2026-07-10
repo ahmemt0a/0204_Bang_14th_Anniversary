@@ -164,7 +164,7 @@
                 <div id="mobile-scroll-notice" class="h-0 opacity-0 overflow-hidden transition-all duration-500 ease-out sm:h-auto sm:opacity-100 sm:flex-1 sm:min-w-0 order-2 sm:order-1">
                     <div class="flex flex-col bg-slate-50 sm:bg-transparent p-2.5 sm:p-0 rounded-xl border border-slate-100 sm:border-0">
                         <span class="text-xs text-slate-500 font-bold uppercase tracking-wider text-center sm:text-left">দায়িত্বশীল যে কোন বন্ধুর কাছে এন্ট্রি ফি দিয়ে রেজিষ্ট্রেশন করা যাবে</span>
-                        <span class="text-sm text-slate-600 font-medium mt-0.5 text-center sm:text-left">এন্ট্রি ফি প্রদান শেষে বন্ধুকে স্ক্রিনশট পাঠিয়ে আপনার সিরিয়াল নম্বর নিয়ে নিবেন</span>
+                        <span class="text-sm text-slate-600 font-medium mt-0.5 text-center sm:text-left">পেমেন্ট করে বন্ধুকে স্ক্রিনশট পাঠিয়ে আপনার সিরিয়াল নম্বর নিয়ে নিবেন</span>
                     </div>
                 </div>
 
@@ -240,25 +240,6 @@
 
 <!-- JAVASCRIPT UPDATED DYNAMIC DATA -->
 <script>
-	// মোবাইলে স্ক্রল করার পর নোটিশ টেক্সট দেখানোর লজিক
-window.addEventListener('scroll', function() {
-    // শুধুমাত্র মোবাইল স্ক্রিনের জন্য কাজ করবে (width < 640px)
-    if (window.innerWidth < 640) {
-        const noticeEl = document.getElementById('mobile-scroll-notice');
-        
-        // ইউজার যদি ওপর থেকে ৫০ পিক্সেলের বেশি স্ক্রল করে নিচে নামে
-        if (window.scrollY > 50) {
-            noticeEl.style.height = '60px'; // টেক্সটের উচ্চতা অনুযায়ী সেট করা
-            noticeEl.style.opacity = '1';
-            noticeEl.classList.add('mb-1');
-        } else {
-            // আবার স্ক্রল করে একদম ওপরে উঠে গেলে নোটিশটি নিচে লুকিয়ে যাবে
-            noticeEl.style.height = '0px';
-            noticeEl.style.opacity = '0';
-            noticeEl.classList.remove('mb-1');
-        }
-    }
-});
 // Updated List from "ORGS New.xlsx"
 const organizersData = [
     { "name": "Joynal Abedin Joy", "phone": "", "bkash": false, "nagad": false, "rocket": false, "bkashType": "", "nagadType": "", "rocketType": "", "fbUrl": "https://www.facebook.com/mahmud.joy.12" },
@@ -397,6 +378,25 @@ const organizersData = [
         document.addEventListener("DOMContentLoaded", function() {
             generateOrganizerCards();
         });
+		// মোবাইলে স্ক্রল করার পর নোটিশ টেক্সট দেখানোর লজিক
+window.addEventListener('scroll', function() {
+    // শুধুমাত্র মোবাইল স্ক্রিনের জন্য কাজ করবে (width < 640px)
+    if (window.innerWidth < 640) {
+        const noticeEl = document.getElementById('mobile-scroll-notice');
+        
+        // ইউজার যদি ওপর থেকে ৫০ পিক্সেলের বেশি স্ক্রল করে নিচে নামে
+        if (window.scrollY > 50) {
+            noticeEl.style.height = '60px'; // টেক্সটের উচ্চতা অনুযায়ী সেট করা
+            noticeEl.style.opacity = '1';
+            noticeEl.classList.add('mb-1');
+        } else {
+            // আবার স্ক্রল করে একদম ওপরে উঠে গেলে নোটিশটি নিচে লুকিয়ে যাবে
+            noticeEl.style.height = '0px';
+            noticeEl.style.opacity = '0';
+            noticeEl.classList.remove('mb-1');
+        }
+
+});
     </script>
 </body>
 </html>
